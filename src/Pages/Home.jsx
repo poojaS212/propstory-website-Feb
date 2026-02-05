@@ -1,7 +1,8 @@
 import HowWeWork from "../Components/HowWeWork";
 import AboutSecond from "../Components/AboutSecond";
-import AboutScrollSection from "../Components/AboutStickyScroll";
 import AboutUs from "../Components/AboutUS";
+import AboutThird from "@/Components/AboutThird";
+import AboutStickyScroll from "@/Components/AboutStickyScroll";
 import HeroSection from "../Components/HeroSection";
 import Navbar from "../Components/Navbar";
 
@@ -13,9 +14,11 @@ import Navbar from "../Components/Navbar";
     <Navbar />
     <HeroSection />
     <HowWeWork />
-    <AboutUs />
-    <AboutScrollSection />
     <AboutSecond />
+    <AboutThird />
+    <AboutStickyScroll />
+    <AboutUs />
+
    </>
 
   )

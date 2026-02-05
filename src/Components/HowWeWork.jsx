@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ShinyText from './ShinyText';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,14 +93,26 @@ const HowWeWork = () => {
           {card.step}
         </span>
       
-        <h3 className="relative text-3xl md:text-5xl font-extrabold z-20 text-gray-900 animate-fadeInUp">
-          {card.title}
-        </h3>
+      <ShinyText
+  text={card.title}
+  speed={2}
+  className="relative text-3xl md:text-4xl leading-relaxed font-extrabold z-20 text-blue-900"
+  delay={0}
+  color="#1e3a8a"
+  shineColor="#ffffff"
+  spread={120}
+  direction="left"
+  yoyo={false}
+  pauseOnHover={false}
+  disabled={false}
+/>
+      
         <span className="block w-16 h-1 bg-indigo-500 rounded mt-2 z-20"></span>
       </div>
      
       <div className="relative flex flex-col justify-center items-start">
-        <p className="text-gray-700 text-lg md:text-xl leading-relaxed z-10 animate-fadeInUp">
+        
+        <p className="text-gray-700 text-md md:text-lg leading-relaxed z-10 animate-fadeInUp">
           {card.description}
         </p>
       </div>
