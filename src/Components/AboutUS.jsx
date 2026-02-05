@@ -2,13 +2,14 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import FlipTextButton from "./FlipTextButton";
-import useReveal from "../hooks/useReveal";
+import HorizontalStats from "./HorizontalStats";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutUs = () => {
   const sectionRef = useRef(null);
-  useReveal(sectionRef);
+  
   const textRef = useRef(null);
   const videoRef = useRef(null);
 
@@ -48,7 +49,7 @@ const AboutUs = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         
         {/* LEFT CONTENT */}
-        <div ref={textRef} className="space-y-10">
+        <div ref={textRef}>
           <span className="block text-sm tracking-widest text-gray-500 uppercase">
             About
           </span>
@@ -68,9 +69,10 @@ const AboutUs = () => {
             unique path by enabling real estate brands to bridge the
             information divide between the product and the customer.
           </p>
+        <HorizontalStats />
 
          <div>
-           <FlipTextButton text="Explore Services" className="mt-12" />
+           <FlipTextButton text="contact us"/>
 
          </div>
         </div>
@@ -96,6 +98,7 @@ const AboutUs = () => {
           {/* frame */}
           <div className="absolute inset-4 border border-white/40 pointer-events-none" />
         </div>
+
 
       </div>
     </section>

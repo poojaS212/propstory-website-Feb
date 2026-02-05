@@ -1,10 +1,18 @@
 import { useRef } from "react";
 import FlipTextButton from "./FlipTextButton";
-import useReveal from "../hooks/useReveal";
+import BlurText from "./BlurText";
+import { motion } from "framer-motion"
+
 
 const AboutSecond = () => {
   const sectionRef = useRef(null);
-  useReveal(sectionRef);
+  
+
+const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
+
+
 
   return (
     <section ref={sectionRef} className="group relative w-full h-screen overflow-hidden bg-white">
@@ -18,25 +26,30 @@ const AboutSecond = () => {
         <span className="block text-sm tracking-widest text-blue-950 italic font-semibold underline uppercase">
           About
         </span>
+<BlurText
+  text="Tomorrow&apos;s Growth Starts Today"
+  delay={200}
+  animateBy="words"
+  direction="top"
+  onAnimationComplete={handleAnimationComplete}
+  className="block text-[12vw] md:text-[8vw] italic"
+/>
 
-        {/* Headline */}
-        <div className="max-w-6xl">
-          <h1 className="text-black leading-[0.95]">
-            <span className="block text-[12vw] md:text-[8vw] italic">
-              Tomorrow&apos;s Growth
-            </span>
-            <span className="block text-[14vw] md:text-[9vw]">
-              Starts Today
-            </span>
-          </h1>
-        </div>
 
         {/* Bottom Paragraph */}
-        <div className="max-w-sm text-black text-sm leading-relaxed">
-          <p>
-            Founded in 2015, PropStory has grown into a high ROI-driven, preferred digital marketing partner for many of India’s best-known and well-respected real estate brands.
-          </p>
-        </div>
+<motion.div
+  initial={{ opacity: 0, y: 24, filter: "blur(6px)" }}
+  whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+  viewport={{ once: true, margin: "-500px" }}
+  transition={{ duration: 0.9, ease: "easeOut" }}
+  className="lg:text-lg text-black text-md leading-relaxed"
+>
+  <p>
+    Founded in 2015, PropStory has grown into a high ROI-driven, preferred digital
+    marketing partner for many of India’s best-known and well-respected real estate brands.
+  </p>
+</motion.div>
+
 
         <div>
           <FlipTextButton text="Explore Services" className="mt-12" />

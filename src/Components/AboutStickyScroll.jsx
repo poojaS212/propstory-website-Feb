@@ -1,14 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import useReveal from "../hooks/useReveal";
 
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AboutScrollSection = () => {
+const AboutStickyScroll = () => {
   const sectionRef = useRef(null);
-  useReveal(sectionRef);
   const textRef = useRef(null);
 
 useEffect(() => {
@@ -110,4 +108,4 @@ useEffect(() => {
   );
 };
 
-export default AboutScrollSection;
+export default AboutStickyScroll;

@@ -1,29 +1,49 @@
 import React from "react";
+import Shuffle from "./Shuffle";
 
-const FlipTextButton = ({ text = "Discover Digicove", className = "" }) => {
+const ShuffleButton = ({ text = "Discover Digicove", className = "" }) => {
   return (
     <button
-      className={`group inline-flex items-center gap-6 px-8 py-1 border border-blue-300 rounded-full bg-white overflow-hidden cursor-pointer font-semibold tracking-wider transition-all duration-300 hover:shadow-xl ${className}`}
+      className={`group inline-flex items-center gap-2
+      px-3 py-2
+      border border-blue-300 rounded-full
+      bg-white hover:shadow-sm
+      transition-all duration-200 ${className}`}
     >
-      {/* Text */}
-      <span className="pxl-btn-text flex">
-        {text.split("").map((char, index) => (
-          <span
-            key={index}
-            className="letter pxl-xspin"
-            style={{ transitionDelay: `${index * 100}ms` }}
-          >
-            {char === " " ? "\u00A0" : char}
+      <Shuffle
+        text={
+          <span className="flex text-[16px] leading-none font-medium tracking-wide">
+            {text.split("").map((char, index) => (
+              <span
+                key={index}
+                className="letter"
+                style={{ transitionDelay: `${index * 30}ms` }}
+              >
+                {char === " " ? "\u00A0" : char}
+              </span>
+            ))}
           </span>
-        ))}
-      </span>
+        }
+        shuffleDirection="right"
+        duration={0.22}
+        stagger={0.02}
+        shuffleTimes={1}
+        triggerOnHover
+        loop={false}
+      />
 
       {/* Arrow */}
-      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#084a84] text-white text-lg transition-transform duration-500 group-hover:rotate-45 group-hover:scale-110">
+      <span
+        className="flex items-center justify-center
+        w-6 h-6 rounded-full
+        bg-[#084a84] text-white text-[10px]
+        transition-transform duration-200
+        group-hover:rotate-45"
+      >
         ↗
       </span>
     </button>
   );
 };
 
-export default FlipTextButton;
+export default ShuffleButton;
