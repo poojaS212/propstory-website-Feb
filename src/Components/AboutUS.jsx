@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import FlipTextButton from "./FlipTextButton";
 import HorizontalStats from "./HorizontalStats";
 
 
@@ -70,11 +69,7 @@ const AboutUs = () => {
             information divide between the product and the customer.
           </p>
         <HorizontalStats />
-
-         <div>
-           <FlipTextButton text="contact us"/>
-
-         </div>
+        
         </div>
 
         {/* RIGHT VIDEO / 3D */}

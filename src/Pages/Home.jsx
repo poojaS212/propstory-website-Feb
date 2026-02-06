@@ -5,6 +5,11 @@ import AboutThird from "@/Components/AboutThird";
 import AboutStickyScroll from "@/Components/AboutStickyScroll";
 import HeroSection from "../Components/HeroSection";
 import Navbar from "../Components/Navbar";
+import OurClientsSection from "@/Components/OurClientsSection";
+import OurClients from "@/Components/OurClients";
+import OurClientsvertical from "@/Components/OurClientsvertical";
+import ContactSection from "@/Components/ContactSection";
+import ContactForm from "@/Components/ContactForm";
 import WhyUS from "@/Components/WhyUS";
 import BenefitsSection from "@/Components/BenefitsSection";
 
@@ -22,6 +27,12 @@ import BenefitsSection from "@/Components/BenefitsSection";
     <AboutUs />
     <WhyUS />
     <BenefitsSection />
+    <OurClientsvertical />
+    <OurClients />
+    <OurClientsSection />
+    <ContactSection />
+    <ContactForm />
+    
 
    </>
 

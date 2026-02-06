@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitText from "./SplitText";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -8,7 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 const AboutStickyScroll = () => {
   const sectionRef = useRef(null);
   const textRef = useRef(null);
-
+  const handleAnimationComplete = () => {
+    console.log("All letters have animated!");
+  };
 useEffect(() => {
   const ctx = gsap.context(() => {
     const textEl = textRef.current;
@@ -49,7 +52,7 @@ useEffect(() => {
       {/* ABOUT SECTION */}
       <section
         ref={sectionRef}
-        className="relative h-screen bg-[#084a84] text-white overflow-hidden"
+        className="relative h-screen bg-blue-950 text-white overflow-hidden"
       >
         <div className="max-w-7xl mx-auto h-full grid grid-cols-1 lg:grid-cols-12 gap-12 px-6 lg:px-12 py-24">
 
@@ -60,13 +63,29 @@ useEffect(() => {
             </span>
             <h2 className="text-5xl lg:text-6xl font-light leading-tight">
               All about <br />
-              <span className="font-normal">PropStory</span>
+
+                 <SplitText
+                text="PropStory"
+                className="text-7xl font-semibold text-center itali leading-relaxed"
+                delay={100}
+                duration={1.25}
+                ease="power3.out"
+                splitType="chars"
+                from={{ opacity: 0, y: 40 }}
+                to={{ opacity: 1, y: 0 }}
+                threshold={0.3}
+                rootMargin="100px"
+                textAlign="center"
+                onLetterAnimationComplete={handleAnimationComplete}
+                showCallback
+              />
             </h2>
+             
           </div>
 
           {/* MIDDLE TEXT */}
           <div className="lg:col-span-4 overflow-hidden">
-            <div ref={textRef} className="space-y-12 text-[15px] leading-relaxed">
+            <div ref={textRef} className="space-y-12 text-[16px] italic leading-relaxed">
               <p>
                 Your specialised digital marketing partner.
               </p>
@@ -95,11 +114,18 @@ useEffect(() => {
 
           {/* RIGHT IMAGE */}
           <div className="lg:col-span-4 hidden lg:flex justify-center items-center">
-            <img
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
-              alt="Digital real estate"
-              className="w-[320px] h-[420px] object-cover rounded-2xl shadow-xl"
-            />
+              <div
+          className="relative w-full h-[420px] overflow-hidden"
+        >
+          
+
+          {/* subtle overlay for luxury feel */}
+          <div className="absolute inset-0 bg-black/10" />
+
+          {/* frame */}
+          <div className="absolute inset-4 border border-white/40 pointer-events-none" />
+        </div>
+        
           </div>
         </div>
       </section>
