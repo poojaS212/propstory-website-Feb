@@ -3,8 +3,28 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family:"Nova-Light";
+  src: url(./assets/fonts/Proxima_Nova_Light.ttf);
+}
+
+@font-face {
+  font-family:"Nova-Semibold";
+  src: url(./assets/fonts/Proxima_Nova_Semibold.ttf);
+}
+
+@font-face {
+  font-family:"Nova-Regular";
+  src: url(./assets/fonts/Proxima_Nova_Regular.ttf);
+}
+
+/* @font-face {
+  font-family:"Nova-Italic";
+  src: url(./assets/fonts/nova_italic.ttf);
+} */
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
 
@@ -52,6 +72,14 @@ html{
 html, body {
   scroll-behavior: auto;
 }
+
+body{
+  font-family: "Nova-Regular";
+}
+
+/* .italic {
+  font-family: "Nova-Italic";
+} */
 
 .pxl-btn-text {
   perspective: 1200px;
