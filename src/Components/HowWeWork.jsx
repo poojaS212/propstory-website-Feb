@@ -67,7 +67,7 @@ const HowWeWork = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative h-screen w-full bg-gray-100">
+    <section ref={sectionRef} className="relative h-screen w-full bg-[#FCF5E1]">
       <div className="pt-12 text-center z-50 px-4">
         <h4 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">
           How We Work
@@ -87,18 +87,18 @@ const HowWeWork = () => {
     className="absolute inset-0 flex items-center justify-center"
     style={{ zIndex: index + 1 }}
   >
-    <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 w-[90%] max-w-6xl px-10 py-20 lg:mt-24 mt-10 bg-white rounded-3xl shadow-2xl transform transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
+    <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 w-[90%] max-w-6xl px-10 py-20 lg:mt-24 mt-10 bg-[#161E27] rounded-3xl shadow-2xl transform transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
       <div className="relative flex flex-col justify-center">
-        <span className="absolute -left-6 -top-22 text-[10rem] md:text-[6rem] font-extrabold text-blue-300 opacity-20 select-none pointer-events-none z-10">
+        <span className="absolute -left-6 -top-22 text-[10rem] md:text-[6rem] font-extrabold text-[#fcf5e189] opacity-20 select-none pointer-events-none z-10">
           {card.step}
         </span>
       
       <ShinyText
   text={card.title}
   speed={2}
-  className="relative text-3xl md:text-4xl leading-relaxed font-extrabold z-20 text-blue-900"
+  className="relative text-3xl md:text-4xl leading-relaxed font-extrabold z-20 text-white"
   delay={0}
-  color="#1e3a8a"
+  color="#fff"
   shineColor="#ffffff"
   spread={120}
   direction="left"
@@ -107,18 +107,18 @@ const HowWeWork = () => {
   disabled={false}
 />
       
-        <span className="block w-16 h-1 bg-indigo-500 rounded mt-2 z-20"></span>
+        <span className="block w-16 h-1 bg-white rounded mt-2 z-20"></span>
       </div>
      
       <div className="relative flex flex-col justify-center items-start">
         
-        <p className="text-gray-700 text-md md:text-lg leading-relaxed z-10 animate-fadeInUp">
+        <p className="text-white text-md md:text-lg leading-relaxed z-10 animate-fadeInUp">
           {card.description}
         </p>
       </div>
 
       {/* Card background */}
-      <div className="absolute inset-0 bg-white rounded-3xl shadow-2xl -z-10" />
+      <div className="absolute inset-0 bg-[#161E27] rounded-3xl shadow-2xl -z-10" />
     </div>
   </div>
 ))}

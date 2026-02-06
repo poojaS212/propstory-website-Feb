@@ -5,6 +5,11 @@ import AboutThird from "@/Components/AboutThird";
 import AboutStickyScroll from "@/Components/AboutStickyScroll";
 import HeroSection from "../Components/HeroSection";
 import Navbar from "../Components/Navbar";
+import OurClientsSection from "@/Components/OurClientsSection";
+import OurClients from "@/Components/OurClients";
+import OurClientsvertical from "@/Components/OurClientsvertical";
+import ContactSection from "@/Components/ContactSection";
+import ContactForm from "@/Components/ContactForm";
 
 
  const Home = () => {
@@ -18,7 +23,11 @@ import Navbar from "../Components/Navbar";
     <AboutThird />
     <AboutStickyScroll />
     <AboutUs />
-
+    <OurClientsvertical />
+    <OurClients />
+    <OurClientsSection />
+    <ContactSection />
+    <ContactForm />
    </>
 
   )
