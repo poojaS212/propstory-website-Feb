@@ -5,6 +5,8 @@ import AboutThird from "@/Components/AboutThird";
 import AboutStickyScroll from "@/Components/AboutStickyScroll";
 import HeroSection from "../Components/HeroSection";
 import Navbar from "../Components/Navbar";
+import WhyUS from "@/Components/WhyUS";
+import BenefitsSection from "@/Components/BenefitsSection";
 
 
  const Home = () => {
@@ -18,6 +20,8 @@ import Navbar from "../Components/Navbar";
     <AboutThird />
     <AboutStickyScroll />
     <AboutUs />
+    <WhyUS />
+    <BenefitsSection />
 
    </>
 
