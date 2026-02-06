@@ -10,6 +10,8 @@ import OurClients from "@/Components/OurClients";
 import OurClientsvertical from "@/Components/OurClientsvertical";
 import ContactSection from "@/Components/ContactSection";
 import ContactForm from "@/Components/ContactForm";
+import WhyUS from "@/Components/WhyUS";
+import BenefitsSection from "@/Components/BenefitsSection";
 
 
  const Home = () => {
@@ -23,11 +25,15 @@ import ContactForm from "@/Components/ContactForm";
     <AboutThird />
     <AboutStickyScroll />
     <AboutUs />
+    <WhyUS />
+    <BenefitsSection />
     <OurClientsvertical />
     <OurClients />
     <OurClientsSection />
     <ContactSection />
     <ContactForm />
+    
+
    </>
 
   )
