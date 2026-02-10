@@ -49,10 +49,12 @@ useEffect(() => {
 
   return (
     <>
+
+    <section className="h-[20vh] bg-white"></section>
       {/* ABOUT SECTION */}
       <section
         ref={sectionRef}
-        className="relative h-screen bg-blue-950 text-white overflow-hidden"
+        className="relative h-screen bg-[#f6f3ea] text-black overflow-hidden"
       >
         <div className="max-w-7xl mx-auto h-full grid grid-cols-1 lg:grid-cols-12 gap-12 px-6 lg:px-12 py-24">
 

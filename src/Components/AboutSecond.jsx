@@ -2,6 +2,7 @@ import { useRef } from "react";
 import FlipTextButton from "./FlipTextButton";
 import BlurText from "./BlurText";
 import { motion } from "framer-motion"
+import MotionCTA from "./MotionCTA";
 
 
 const AboutSecond = () => {
@@ -15,13 +16,13 @@ const handleAnimationComplete = () => {
 
 
   return (
-    <section ref={sectionRef} className="group relative w-full h-screen overflow-hidden bg-white">
+    <section ref={sectionRef} className="group relative w-full overflow-hidden bg-white">
       
       {/* Hover Background */}
-      <div className="absolute inset-0 bg-blue-100 translate-y-full group-hover:translate-y-0 transition-transform duration-[900ms] ease-[cubic-bezier(.77,0,.18,1)] z-0" />
+      <div className="absolute inset-0 bg-[#f6f3ea] translate-y-full group-hover:translate-y-0 transition-transform duration-[900ms] ease-[cubic-bezier(.77,0,.18,1)] z-0" />
 
       {/* Content */}
-      <div className="relative z-10 h-full px-10 md:px-20 py-16 flex flex-col justify-between">
+      <div className="relative z-10 px-10 md:px-20 py-16 flex flex-col justify-between">
 
         <span className="block text-sm tracking-widest text-blue-950 italic font-semibold underline uppercase">
           About
@@ -52,7 +53,7 @@ const handleAnimationComplete = () => {
 
 
         <div>
-          <FlipTextButton text="Explore Services" className="mt-12" />
+          <MotionCTA text="Explore Services" className="my-12" />
         </div>
 
       </div>

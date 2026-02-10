@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import FlipTextButton from "./FlipTextButton";
+import HeadingBadge from "@/Components/HeadingBadge";
+import MotionCTA from "./MotionCTA";
 
 const logos = [
    "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w5rmmadani.png",
@@ -51,10 +53,8 @@ export default function OurClientsvertical() {
   className="relative"
 >
   {/* Top label */}
-  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#d6b36a]/15 text-[#8c7336] text-sm font-medium">
-    <span className="w-2 h-2 rounded-full bg-[#d6b36a]" />
-    Our Trusted Network
-  </div>
+   <HeadingBadge text="OUR TRUSTED NETWORK" />
+ 
 
   {/* Heading */}
   <h2 className="mt-6 text-4xl md:text-5xl font-[Playfair_Display] leading-tight text-[#2b2b2b]">
@@ -72,8 +72,8 @@ export default function OurClientsvertical() {
   </p>
 
   {/* CTA */}
-  <div className="mt-9">
-    <FlipTextButton text="Explore Clients" />
+  <div className="flex content-start">
+    <MotionCTA text="Explore Clients" />
   </div>
 </motion.div>
 
