@@ -41,7 +41,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-4 left-0 right-0 z-50 pointer-events-none">
+    <header className="fixed top-4 left-0 right-0 z-50 pointer-events-none bg-[#F7F5ED]">
       <div className="relative w-full h-14">
 
         {/* Left Logo */}

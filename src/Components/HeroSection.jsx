@@ -29,7 +29,7 @@ export default function HeroSection() {
     }, []);
   
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-white">
+    <section className="relative h-screen w-full overflow-hidden bg-[#F7F5ED]">
       
       {/* Background
       <Antigravity count={300} color={propstoryColors} autoAnimate /> */}
@@ -68,7 +68,72 @@ export default function HeroSection() {
                 Result Driven <span className="italic">Digital</span>
             </span>
 
-            <RotatingText 
+    
+
+{/* <div className="relative inline-block">
+
+  <span className="absolute left-0 bottom-2 w-full h-8 bg-[#4ADE80] -skew-y-1 opacity-90 -z-0 rounded-md"></span>
+
+
+  <RotatingText
+    texts={[
+      "Marketing",
+      "Strategy",
+      "Campaigns",
+      "Growth",
+      "Performance",
+      "Solutions",
+      "Services",
+      "Lead Generation",
+      "Conversions",
+    ]}
+    mainClassName="relative z-10 text-black overflow-hidden justify-center inline-flex whitespace-nowrap px-2"
+    staggerFrom="last"
+    initial={{ y: "100%" }}
+    animate={{ y: 0 }}
+    exit={{ y: "-120%" }}
+    staggerDuration={0.025}
+    splitLevelClassName="overflow-hidden pb-1"
+    transition={{ type: "spring", damping: 30, stiffness: 400 }}
+    rotationInterval={3000}
+  />
+</div> */}
+
+                        <div className="relative inline-block">
+                        {/* SVG Highlight Shape */}
+                        <img
+                            src="../public/images/shape.svg"   // 👉 adjust path if needed (e.g. /assets/shape.svg)
+                            alt="highlight"
+                            className="absolute left-0 bottom-0 w-full h-[80%] -z-0 pointer-events-none"
+                        />
+
+                        {/* Rotating Text */}
+                        <RotatingText
+                            texts={[
+                            "Marketing",
+                            "Strategy",
+                            "Campaigns",
+                            "Growth",
+                            "Performance",
+                            "Solutions",
+                            "Services",
+                            "Lead-Gen",
+                            "Conversions",
+                            ]}
+                            mainClassName="relative z-10 text-black overflow-hidden justify-center inline-flex whitespace-nowrap px-3"
+                            staggerFrom="last"
+                            initial={{ y: "100%" }}
+                            animate={{ y: 0 }}
+                            exit={{ y: "-120%" }}
+                            staggerDuration={0.025}
+                            splitLevelClassName="overflow-hidden pb-1"
+                            transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                            rotationInterval={3000}
+                        />
+                        </div>
+
+
+            {/* <RotatingText 
                 texts={[
                 'Marketing',
                 'Strategy',
@@ -89,7 +154,7 @@ export default function HeroSection() {
                 splitLevelClassName="overflow-hidden pb-1"
                 transition={{ type: 'spring', damping: 30, stiffness: 400 }}
                 rotationInterval={3000}
-            />
+            /> */}
             </h1>
 
 
