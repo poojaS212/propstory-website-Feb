@@ -18,10 +18,10 @@
   src: url(./assets/fonts/Proxima_Nova_Regular.ttf);
 }
 
-/* @font-face {
+@font-face {
   font-family:"Nova-Italic";
-  src: url(./assets/fonts/nova_italic.ttf);
-} */
+  src: url(./assets/fonts/proxima_nova_italic.otf);
+}
 
 :root {
   /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
@@ -77,14 +77,13 @@ body{
   font-family: "Nova-Regular";
 }
 
-/* .italic {
-  font-family: "Nova-Italic";
-} */
 
 .pxl-btn-text {
   perspective: 1200px;
 }
-
+.italic{
+  font-family: "Nova-Italic";
+}
 .letter {
   display: inline-block;
   transform-origin: right center; 
@@ -185,4 +184,12 @@ body{
   0% { transform: translateY(0px); }
   50% { transform: translateY(-40px); }
   100% { transform: translateY(0px); }
+}
+/* Hide scrollbar but keep scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
 }

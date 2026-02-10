@@ -87,7 +87,13 @@ const HowWeWork = () => {
     className="absolute inset-0 flex items-center justify-center"
     style={{ zIndex: index + 1 }}
   >
-    <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 w-[90%] max-w-6xl px-10 py-20 lg:mt-24 mt-10 bg-[#161E27] rounded-3xl shadow-2xl transform transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
+   <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 
+  w-[90%] max-w-6xl px-10 py-20 lg:mt-24 mt-10 
+  bg-[#161E27] rounded-3xl shadow-2xl
+  border-t-4 border-[#fff]
+  before:absolute before:inset-x-4 before:top-0 before:h-px before:bg-white/10
+  transform transition-transform duration-500 hover:scale-[1.02] hover:shadow-3xl">
+
       <div className="relative flex flex-col justify-center">
         <span className="absolute -left-6 -top-22 text-[10rem] md:text-[6rem] font-extrabold text-[#fcf5e189] opacity-20 select-none pointer-events-none z-10">
           {card.step}
@@ -118,7 +124,8 @@ const HowWeWork = () => {
       </div>
 
       {/* Card background */}
-      <div className="absolute inset-0 bg-[#161E27] rounded-3xl shadow-2xl -z-10" />
+      <div className="absolute -top-3 left-6 right-6 h-3 bg-black/20 rounded-t-2xl -z-20" />
+
     </div>
   </div>
 ))}

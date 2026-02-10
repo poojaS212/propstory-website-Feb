@@ -1,7 +1,6 @@
 import HowWeWork from "../Components/HowWeWork";
 import AboutSecond from "../Components/AboutSecond";
 import AboutUs from "../Components/AboutUS";
-import AboutThird from "@/Components/AboutThird";
 import AboutStickyScroll from "@/Components/AboutStickyScroll";
 import HeroSection from "../Components/HeroSection";
 import Navbar from "../Components/Navbar";
@@ -12,6 +11,12 @@ import ContactSection from "@/Components/ContactSection";
 import ContactForm from "@/Components/ContactForm";
 import WhyUS from "@/Components/WhyUS";
 import BenefitsSection from "@/Components/BenefitsSection";
+import ContactSectionSecond from "@/Components/ContactSectionSecond";
+import MeetOurTeam from "@/Components/MeetOurTeam";
+import MediaSection from "@/Components/MediaSection";
+import TransformSection from "@/Components/TransformSection";
+import Footer from "@/Components/Footer";
+import FooterSecond from "@/Components/FooterSecond";
 
 
  const Home = () => {
@@ -22,7 +27,7 @@ import BenefitsSection from "@/Components/BenefitsSection";
     <HeroSection />
     <HowWeWork />
     <AboutSecond />
-    <AboutThird />
+    {/* <AboutThird /> */}
     <AboutStickyScroll />
     <AboutUs />
     <WhyUS />
@@ -30,8 +35,15 @@ import BenefitsSection from "@/Components/BenefitsSection";
     <OurClientsvertical />
     <OurClients />
     <OurClientsSection />
+    <MeetOurTeam />
+    <MediaSection />
+    <TransformSection />
+    <ContactSectionSecond />
     <ContactSection />
     <ContactForm />
+    <FooterSecond />
+    <Footer />
+
     
 
    </>

@@ -53,7 +53,7 @@ export default function OurClients() {
     </p>
 
     <h2 className="mt-4 text-4xl md:text-5xl font-[Playfair_Display] font-medium text-[#2b2b2b] leading-[1.1]">
-      Selected partnerships
+      Selected Partnerships
     </h2>
   </div>
 
