@@ -12,6 +12,7 @@ import ContactSection from "@/Components/ContactSection";
 import ContactForm from "@/Components/ContactForm";
 import WhyUS from "@/Components/WhyUS";
 import BenefitsSection from "@/Components/BenefitsSection";
+import FaqsSection from "@/Components/FaqsSection";
 
 
  const Home = () => {
@@ -30,6 +31,7 @@ import BenefitsSection from "@/Components/BenefitsSection";
     <OurClientsvertical />
     <OurClients />
     <OurClientsSection />
+    <FaqsSection />
     <ContactSection />
     <ContactForm />
     

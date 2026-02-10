@@ -130,8 +130,8 @@
 
   {/* Content */}
   <foreignObject x="0" y="0" width="420" height="300">
-    <div className="h-full w-full p-10 flex flex-col justify-between">
-      <h3 className="text-3xl font-semibold text-gray-800">{title}</h3>
+    <div className="h-full w-full p-10 flex flex-col">
+      <h3 className="text-3xl font-semibold text-gray-800 mb-10">{title}</h3>
       <p className="text-gray-600 leading-relaxed max-w-xs">
         {desc}
       </p>
