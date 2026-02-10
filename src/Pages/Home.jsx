@@ -17,6 +17,7 @@ import MediaSection from "@/Components/MediaSection";
 import TransformSection from "@/Components/TransformSection";
 import Footer from "@/Components/Footer";
 import FooterSecond from "@/Components/FooterSecond";
+import FaqsSection from "@/Components/FaqsSection";
 
 
  const Home = () => {
@@ -32,13 +33,14 @@ import FooterSecond from "@/Components/FooterSecond";
     <AboutUs />
     <WhyUS />
     <BenefitsSection />
+      <MeetOurTeam />
     <OurClientsvertical />
     <OurClients />
     <OurClientsSection />
-    <MeetOurTeam />
     <MediaSection />
     <TransformSection />
     <ContactSectionSecond />
+    <FaqsSection />
     <ContactSection />
     <ContactForm />
     <FooterSecond />

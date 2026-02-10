@@ -38,7 +38,7 @@ function StatCard({ value, title, desc, delay = 0 }) {
 
       {/* Yellow mask (slides DOWN) */}
       <div
-        className={`absolute inset-0 bg-lime-300 transition-transform duration-700 ease-out ${
+        className={`absolute inset-0 bg-[#FCF5E1] transition-transform duration-700 ease-out ${
           visible ? "translate-y-full" : "translate-y-0"
         }`}
         style={{ transitionDelay: `${delay}ms` }}
