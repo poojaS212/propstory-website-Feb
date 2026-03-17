@@ -1,4 +1,8 @@
-import HowWeWork from "../Components/HowWeWork";
+
+
+
+import HowPSWork from "../Components/HowPSWork";
+import AboutSecond from "../Components/AboutSecond";
 import AboutUs from "../Components/AboutUS";
 import HeroSection from "../Components/HeroSection";
 import OurClientsvertical from "@/Components/OurClientsvertical";
@@ -13,35 +17,31 @@ import FaqsSection from "@/Components/FaqsSection";
 import HeroSectionSecond from "@/Components/HeroSectionSecond";
 import Navbar from "@/Components/Navbar";
 
+
  const Home = () => {
   return (
    <>
     <div className="pt-18"></div>
-    <Navbar />
+    {/* <Navbar /> */}
     <HeroSection />
-    <HeroSectionSecond />
-    <HowWeWork />
+    <HowPSWork />
     {/* <AboutSecond /> */}
     {/* <AboutThird /> */}
     {/* <AboutStickyScroll /> */}
     <AboutUs />
     {/* <WhyUS /> */}
     <BenefitsSection />
-      <MeetOurTeam />
+      {/* <MeetOurTeam /> */}
     <OurClientsvertical />
-    {/* <OurClients /> */}
-    {/* <OurClientsSection /> */}
+    {/* <OurClients />
+    <OurClientsSection /> */}
     <MediaSection />
     <TransformSection />
     {/* <ContactSectionSecond /> */}
     <FaqsSection />
     <ContactSection />
     {/* <ContactForm /> */}
-    <FooterSecond />
-    <Footer />
-
-    
-
+  
    </>
 
   )
