@@ -1,24 +1,17 @@
 import HowWeWork from "../Components/HowWeWork";
-import AboutSecond from "../Components/AboutSecond";
 import AboutUs from "../Components/AboutUS";
-import AboutStickyScroll from "@/Components/AboutStickyScroll";
 import HeroSection from "../Components/HeroSection";
-import Navbar from "../Components/Navbar";
-import OurClientsSection from "@/Components/OurClientsSection";
-import OurClients from "@/Components/OurClients";
 import OurClientsvertical from "@/Components/OurClientsvertical";
 import ContactSection from "@/Components/ContactSection";
-import ContactForm from "@/Components/ContactForm";
-import WhyUS from "@/Components/WhyUS";
 import BenefitsSection from "@/Components/BenefitsSection";
-import ContactSectionSecond from "@/Components/ContactSectionSecond";
 import MeetOurTeam from "@/Components/MeetOurTeam";
 import MediaSection from "@/Components/MediaSection";
 import TransformSection from "@/Components/TransformSection";
 import Footer from "@/Components/Footer";
 import FooterSecond from "@/Components/FooterSecond";
 import FaqsSection from "@/Components/FaqsSection";
-
+import HeroSectionSecond from "@/Components/HeroSectionSecond";
+import Navbar from "@/Components/Navbar";
 
  const Home = () => {
   return (
@@ -26,23 +19,24 @@ import FaqsSection from "@/Components/FaqsSection";
     <div className="pt-18"></div>
     <Navbar />
     <HeroSection />
+    <HeroSectionSecond />
     <HowWeWork />
-    <AboutSecond />
+    {/* <AboutSecond /> */}
     {/* <AboutThird /> */}
-    <AboutStickyScroll />
+    {/* <AboutStickyScroll /> */}
     <AboutUs />
-    <WhyUS />
+    {/* <WhyUS /> */}
     <BenefitsSection />
       <MeetOurTeam />
     <OurClientsvertical />
-    <OurClients />
-    <OurClientsSection />
+    {/* <OurClients /> */}
+    {/* <OurClientsSection /> */}
     <MediaSection />
     <TransformSection />
-    <ContactSectionSecond />
+    {/* <ContactSectionSecond /> */}
     <FaqsSection />
     <ContactSection />
-    <ContactForm />
+    {/* <ContactForm /> */}
     <FooterSecond />
     <Footer />
 
