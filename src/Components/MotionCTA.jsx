@@ -13,7 +13,7 @@ const MotionCTA = ({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay }}
       viewport={{ once: true }}
-      className="mt-16 text-center"
+      className="text-center"
     >
       <a
         href={href}
