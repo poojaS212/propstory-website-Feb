@@ -1,21 +1,25 @@
 import Antigravity from "./Antigravity";
 import RotatingText from "./RotatingText";
 import { useEffect, useState } from "react";
+import shape from "../../public/images/shape.png";
+import RotatingTextHalden from "./RotatingTextHalden";
+
 
 const propstoryColors = [
-    "rgba(30, 120, 220, 1)",  // deep blue
-  "rgba(60, 180, 255, 1)",  // cyan / sky blue
-  "rgba(80, 200, 160, 1)",  // teal / greenish
-  "rgba(140, 210, 90, 1)",  // green
-  "rgba(245, 200, 60, 1)",  // yellow
-  "rgba(255, 140, 40, 1)",  // orange
-  "rgba(235, 70, 60, 1)",   // red
+    "rgba(30, 120, 220, 1.0)",  // deep blue
+  "rgba(60, 180, 255, 1.0)",  // cyan / sky blue
+  "rgba(80, 200, 160, 1.0)",  // teal / greenish
+  "rgba(140, 210, 90, 1.0)",  // green
+  "rgba(245, 200, 60, 1.0)",  // yellow
+  "rgba(255, 140, 40, 1.0)",  // orange
+  "rgba(235, 70, 60, 1.0)",   // red
   ];
 
 
 export default function HeroSection() {
 
     const [color, setColor] = useState(propstoryColors[0]);
+    const [mouse, setMouse] = useState({x : 0, y : 0})
 
     useEffect(() => {
       const interval = setInterval(() => {
@@ -27,13 +31,22 @@ export default function HeroSection() {
   
       return () => clearInterval(interval);
     }, []);
+
+
+    const handleMove = (e) => {
+      const rect = e.currentTarget.getBoundingClientRect();
+  
+      setMouse({
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top
+      });
+    };
   
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-[#F7F5ED]">
-      
-      {/* Background
-      <Antigravity count={300} color={propstoryColors} autoAnimate /> */}
-
+    <section onMouseMove={handleMove} className="relative h-screen w-full overflow-hidden bg-[#F7F5ED]" >
+ 
+      <div className="absolute inset-0">
+         {/* Background */}
       <Antigravity
             count={1000}
             magnetRadius={6}
@@ -51,123 +64,69 @@ export default function HeroSection() {
             particleShape="capsule"
             fieldStrength={10}
             opacity={1}
+
+            magnetX={mouse.x}
+           magnetY={mouse.y}
         />
+        </div>
+
+      {/* </div> */}
+      
 
 
       {/* Overlay */}
-      {/* <div className="absolute inset-0 z-10 bg-white/70" /> */}
 
-      {/* Content */}
-      <div className="relative z-20 flex flex-col items-center justify-around text-center px-4">
-        <div className="mb-6 flex items-center gap-2 text-sm font-medium text-gray-700">
-        <img src="https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli8ekjocPS_logo.png" alt="Logo" className="w-30" />
+        {/* Content */}
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 pointer-events-none">
+
+        {/* Logo */}
+        <div className="mb-10">
+          <img
+            src="https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli8ekjocPS_logo.png"
+            alt="Logo"
+            className="w-32 mx-auto"
+          />
         </div>
 
-        <h1 className="max-w-5xl text-4xl md:text-6xl lg:text-7xl font-semibold -tracking-normal text-black flex flex-wrap md:flex-nowrap items-center justify-center gap-3 text-center pt-20 pb-20">
-            <span className="whitespace-nowrap">
-                Result Driven <span className="italic">Digital</span>
-            </span>
+        {/* Heading */}
+        <h1 className="max-w-5xl text-4xl md:text-6xl lg:text-7xl font-semibold text-black flex flex-col items-center leading-tight">
 
-    
+          {/* Line 1 */}
+          <span className="whitespace-nowrap">
+            Result Driven Digital
+          </span>
 
-{/* <div className="relative inline-block">
+        
+          <RotatingTextHalden
+            texts={[
+              "Marketing",
+              "Strategy",
+              "Campaigns",
+              "Growth",
+              "Performance",
+              "Solutions",
+              "Services",
+              "Lead-Gen",
+              "Conversions",
+            ]}
+          />
 
-  <span className="absolute left-0 bottom-2 w-full h-8 bg-[#4ADE80] -skew-y-1 opacity-90 -z-0 rounded-md"></span>
+        
 
+        </h1>
 
-  <RotatingText
-    texts={[
-      "Marketing",
-      "Strategy",
-      "Campaigns",
-      "Growth",
-      "Performance",
-      "Solutions",
-      "Services",
-      "Lead Generation",
-      "Conversions",
-    ]}
-    mainClassName="relative z-10 text-black overflow-hidden justify-center inline-flex whitespace-nowrap px-2"
-    staggerFrom="last"
-    initial={{ y: "100%" }}
-    animate={{ y: 0 }}
-    exit={{ y: "-120%" }}
-    staggerDuration={0.025}
-    splitLevelClassName="overflow-hidden pb-1"
-    transition={{ type: "spring", damping: 30, stiffness: 400 }}
-    rotationInterval={3000}
-  />
-</div> */}
-
-                        <div className="relative inline-block">
-                        {/* SVG Highlight Shape */}
-                        <img
-                            src="../public/images/shape.svg"   // 👉 adjust path if needed (e.g. /assets/shape.svg)
-                            alt="highlight"
-                            className="absolute left-0 bottom-0 w-full h-[80%] -z-0 pointer-events-none"
-                        />
-
-                        {/* Rotating Text */}
-                        <RotatingText
-                            texts={[
-                            "Marketing",
-                            "Strategy",
-                            "Campaigns",
-                            "Growth",
-                            "Performance",
-                            "Solutions",
-                            "Services",
-                            "Lead-Gen",
-                            "Conversions",
-                            ]}
-                            mainClassName="relative z-10 text-black overflow-hidden justify-center inline-flex whitespace-nowrap px-3"
-                            staggerFrom="last"
-                            initial={{ y: "100%" }}
-                            animate={{ y: 0 }}
-                            exit={{ y: "-120%" }}
-                            staggerDuration={0.025}
-                            splitLevelClassName="overflow-hidden pb-1"
-                            transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                            rotationInterval={3000}
-                        />
-                        </div>
-
-
-            {/* <RotatingText 
-                texts={[
-                'Marketing',
-                'Strategy',
-                'Campaigns',
-                'Growth',
-                'Performance',
-                'Solutions',
-                'Services',
-                'Lead Generation',
-                'Conversions'
-                ]}
-                mainClassName="bg-[#f0ff96] text-black overflow-hidden justify-center inline-flex whitespace-nowrap "
-                staggerFrom="last"
-                initial={{ y: '100%' }}
-                animate={{ y: 0 }}
-                exit={{ y: '-120%' }}
-                staggerDuration={0.025}
-                splitLevelClassName="overflow-hidden pb-1"
-                transition={{ type: 'spring', damping: 30, stiffness: 400 }}
-                rotationInterval={3000}
-            /> */}
-            </h1>
-
-
-
-        <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
+        {/* Buttons */}
+        <div className="mt-12 flex flex-col sm:flex-row items-center gap-4 pointer-events-auto">
           <button className="rounded-full bg-black px-8 py-4 text-white font-medium hover:bg-gray-800 transition">
             Contact Us
           </button>
+
           <button className="rounded-full border border-gray-300 px-8 py-4 text-black font-medium hover:bg-gray-100 transition">
             Explore More
           </button>
         </div>
-      </div>
+
+        </div>
 
     </section>
   );
