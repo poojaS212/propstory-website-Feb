@@ -1,37 +1,37 @@
 import { useState } from "react"
 
 const leftFaqs = [
-    {q: "What are the digital marketing trends for 2026?",
-     a:  "The essence of modern digital marketing is clear: it focuses on targeting specific audiences while maintaining a conversational and personalized approach. Just a short time ago, data-driven and programmatic marketing powered by artificial intelligence seemed like ambitious concepts, often viewed with skepticism. Today, however, they are the leading digital marketing strategies for 2024. In addition, methods such as social media marketing, content marketing, search engine marketing, micro-moments marketing, voice and visual search engine optimization, chatbots, omnichannel marketing, personalized marketing, influencer marketing, and video marketing continue to be top priorities for online business owners this year."
+    {q: "How much does real estate digital marketing cost in Bangalore?",
+     a:  "Real estate digital marketing costs in Bangalore vary based on project size, location, inventory type, and lead volume goals. PropStory offers custom packages for each project. Pricing depends on media budgets, platforms used, and service scope. It is best to get a project assessment."
     },
 
-    {q: "What is the role of digital marketing in a company?",
-     a:  "Currently, Digital marketing is the most favored marketing technique because we live in a technologically savvy world and almost every form of business is online-based. Creating a website and company profiles on social media platforms is not enough. Staying competitive in such a world requires a solid online presence and thus – Digital marketing. It helps companies in increasing their online presence, it performs market research that is based on the target audience, and it integrates and modifies the company’s online profile accordingly. In short, digital marketing helps businesses to garner new sales, leads and above all online traffic."
+    {q: "Do you create project websites and landing pages for real estate developers?",
+     a:  "Yes, we design and build real estate project websites and high conversion landing pages. Our services include UI UX design, fast development, mobile optimization, CRM integration, site visit booking flows, and scaling pages for multiple inventory types and campaign sources."
     },
 
-    {q: "Is Digital Marketing the future?",
-     a:  "Yes, Digital marketing is definitely the future of the marketing world. Currently, about 99% of the population on this planet is dependent on the internet, be it official work, domestic chores, or day to day activities. And digital marketing is completely based on the internet. Moreover, from viral marketing campaigns to Big Data, it has continuously evolved and adapted to meet the marketing requirements of all online businesses and brands. Nowadays, owing to established digital infrastructure and increased connectivity with lightning-fast internet speed, Digital marketing is evolving faster. From traditional techniques such as Search Engine Optimization and Marketing, it is en route to touching the zenith in the arena of Artificial Intelligence. Programmatic Marketing is now a reality where with the help of AI online advertisements are being automated."
+    {q: "What type of real estate clients do you work with in Bangalore?",
+     a:  "We work with leading real estate developers and brands such as Adani Realty, Emaar India, Sobha, Puravankara, Mahindra Lifespaces, Eldeco, and more. We also work with mid size developers, commercial property brands, and real estate broker networks."
     },
-        {q: "What are the standard processes of a good SEO Company and benefits for your business?",
-        a: " As the best digital marketing consultant, our approach to boost organic traffic by increasing business website visibility on Bing, Yahoo & Google search engine result page through search engine optimization techniques. A good SEO consultant follows white hat seo method that is widely accepted by the search engines algorithms. A good SEO company also must abide by the rules and search engine algorithm as established by Google, Bing & Yahoo. One must never work with SEO companies in Bangalore who practice wrong, black hat seo methods to achieve faster results as it may lead to search engine penalty of your website. SEO services are key to your Digital Strategy because organic seo traffic will be a dominant contributor to your website’s traffic mix."
+      {q: "Can you integrate leads with our CRM or build a custom CRM?",
+      a: "Yes, we can integrate all leads with your existing CRM like Zoho, Salesforce, or LeadSquared. We also build custom CRMs for developers who need project level tracking, sales team workflows, site visit tracking, follow up automation, and reporting dashboards."
     },
 ]
 
 const rightFaqs = [
-    {q: "What are some critical roles in a digital marketing",
-     a: " In the world of internet marketing, digital marketing services have a huge role to play. The best digital marketing companies understand the working of 360° digital spectrum. Always work with digital marketing companies who not only have technologists in their team but also subject matter experts. The critical roles of a digital marketing company are"
+    {q: "How long does it take to see results from real estate SEO in Bangalore?",
+     a: "Real estate SEO results usually take three to six months for noticeable rankings and lead traction. Timelines depend on competition, location keywords, project maturity, and website quality. We focus on project pages, local SEO, and buyer intent keywords for faster impact."
     },
     
-    {q: "What is an example of digital marketing?",
-    a:  "The concept of digital marketing is quite simple. It aims at promoting brands and businesses through various digital technologies that include the internet, MMS, SMS, etc. All marketing strategies include setting certain objectives that are based on the survey of the target audience and the prevailing market information and then selecting a preferable marketing channel and/or platform. As an example, imagine a brand that wants to promote one of its products online. This can be done through Social Media Marketing on Social Media Platforms such as Facebook, Instagram, or Twitter. The process would include launching a marketing campaign that centers on the product and brand awareness."
+    {q: "Which platforms work best for real estate lead generation in Bangalore?",
+    a:  "Google Search, Meta ads, and location focused landing pages work best for Bangalore real estate lead generation. The platform mix depends on project type, budget, and target audience. We test channels and scale only those delivering qualified site visit leads."
    },
 
-        {q: "What is a Digital Marketing Agency and how do they work?",
-        a: " A digital marketing agency is a professional company that helps both businesses and individuals with their digital marketing needs. Digital marketing services offered by these businesses range from SEO, social media marketing, online advertisement on search engines like Google or Bing, web and mobile app development, to even web designing."
+        {q: "Can you generate site visit bookings for new project launches?",
+        a: "Yes, we specialize in new project launch campaigns focused on site visit bookings. We build launch landing pages, run pre launch and launch ads, segment audiences by location and budget, and connect leads directly to sales teams for faster conversions."
         },
 
-        {q: "What is the importance of a digital marketing company in India?",
-        a: " Top digital marketing agencies in India, especially Bangalore, are at the forefront of providing cutting-edge marketing solutions to startups and enterprises alike. Since their inception, these digital marketing companies have provided countless businesses with the strategies and tools required to not only compete but to thrive in this ever-evolving business world."
+        {q: "How do you ensure lead quality for real estate campaigns?",
+        a: "We improve lead quality through intent based targeting, location filters, budget qualifiers, form level screening questions, and post lead validation. We track site visit conversion rates and feedback from sales teams to continuously refine targeting and creatives."
         },
 
         

@@ -15,6 +15,10 @@ const propstoryColors = [
   "rgba(235, 70, 60, 1.0)",   // red
   ];
 
+  // const propstoryColors = [
+  //   "rgba(80, 88, 188, 1.0)",  // deep blue
+  // ];
+
 
 export default function HeroSection() {
 
@@ -43,21 +47,21 @@ export default function HeroSection() {
     };
   
   return (
-    <section onMouseMove={handleMove} className="relative h-screen w-full overflow-hidden bg-[#F7F5ED]" >
+    <section onMouseMove={handleMove} className="relative h-screen w-full overflow-hidden" >
  
       <div className="absolute inset-0">
          {/* Background */}
       <Antigravity
-            count={1000}
+            count={3000}
             magnetRadius={6}
             ringRadius={7}
             waveSpeed={0.4}
             waveAmplitude={1}
-            particleSize={1.2}
+            particleSize={0.6}
             lerpSpeed={0.05}
             color={color}
             autoAnimate
-            particleVariance={1}
+            particleVariance={3}
             rotationSpeed={0}
             depthFactor={1}
             pulseSpeed={3}
@@ -114,6 +118,8 @@ export default function HeroSection() {
         
 
         </h1>
+
+        {/* <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto font-medium leading-relaxed">Empowering high-growth businesses with sophisticated digital systems and result-oriented strategies that redefine the industry standard.</p> */}
 
         {/* Buttons */}
         <div className="mt-12 flex flex-col sm:flex-row items-center gap-4 pointer-events-auto">
