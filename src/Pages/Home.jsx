@@ -14,8 +14,10 @@ import TransformSection from "@/Components/TransformSection";
 import Footer from "@/Components/Footer";
 import FooterSecond from "@/Components/FooterSecond";
 import FaqsSection from "@/Components/FaqsSection";
-import HeroSectionSecond from "@/Components/HeroSectionSecond";
+// import HeroSectionSecond from "@/Components/HeroSectionSecond";
 import Navbar from "@/Components/Navbar";
+import OurTeam from "@/Components/OurTeam";
+import OurBenifits from "@/Components/OurBenifits";
 
 
  const Home = () => {
@@ -31,6 +33,8 @@ import Navbar from "@/Components/Navbar";
     <AboutUs />
     {/* <WhyUS /> */}
     <BenefitsSection />
+    <OurBenifits />
+    <OurTeam />
       {/* <MeetOurTeam /> */}
     <OurClientsvertical />
     {/* <OurClients />

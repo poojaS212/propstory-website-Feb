@@ -48,9 +48,10 @@ export default function OurApproach() {
           </div>
   
           {/* Main Heading */}
-          <h2 className="text-5xl md:text-7xl text-gray-800 leading-tight max-w-4xl">
-            Our Approach
+          <h2 className="text-3xl md:text-5xl text-gray-800 leading-tight max-w-4xl">
+          Our Real Estate Digital Marketing Services In Bangalore
           </h2>
+          <p className="text-lg md:text-xl text-gray-500 mx-auto font-medium leading-relaxed">Being one of the most trusted marketing agencies for real estate in Bangalore, PropStory offers a full spectrum of real estate digital marketing services built to generate property leads, site visits, and sales. Our services cover the entire buyer journey from first discovery to booking, with clear focus on measurable results.</p>
         </div>
   
         {/* Divider Line */}
@@ -58,7 +59,7 @@ export default function OurApproach() {
         {services.map((service, index) => (
           <div
             key={index}
-            className={`${service.bg} ${service.textColor} w-full py-20 border-t-2 border-[#1f1f1f]/80`}
+            className={`${service.bg} ${service.textColor} w-full py-20 border-t-2 border-[#1f1f1f]/80 transition-transform duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:bg-[#cee6b1]`}
           >
             <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 items-center">
               

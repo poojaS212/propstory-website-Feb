@@ -57,7 +57,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           to="/"
-          className={`font-semibold text-lg ${
+          className={`font-extrabold text-2xl ${
             scrolled ? "text-white" : "text-black"
           }`}
         >
