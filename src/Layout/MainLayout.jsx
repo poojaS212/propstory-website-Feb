@@ -12,7 +12,7 @@ export default function MainLayout(){
          <Navbar />
          <Outlet/>
          <FooterSecond />
-         <Footer />
+         {/* <Footer /> */}
         </>
     )
 }

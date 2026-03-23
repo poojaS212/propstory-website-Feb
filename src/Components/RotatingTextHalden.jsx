@@ -26,7 +26,7 @@ export default function RotatingTextHalden({ texts }) {
   }, [index, texts.length]);
 
   return (
-    <div className="overflow-hidden h-[80px] flex justify-center">
+    <div className="overflow-hidden lg:h-[80px] h-[40px] flex justify-center">
       <motion.div
         animate={{ y: `-${index * 100}%` }}
         transition={
@@ -44,7 +44,7 @@ export default function RotatingTextHalden({ texts }) {
         {extendedTexts.map((word, i) => (
           <div
             key={i}
-            className="h-[80px] flex items-center justify-center whitespace-nowrap px-4"
+            className="h-[80px] flex items-center justify-center whitespace-nowrap px-4 bg-gradient-to-r from-[#312E81] via-[#6366F1] to-[#A855F7] bg-clip-text text-transparent"
           >
             {word}
           </div>

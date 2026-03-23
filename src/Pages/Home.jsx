@@ -12,6 +12,8 @@ import TransformSection from "@/Components/TransformSection";
 import FaqsSection from "@/Components/FaqsSection";
 import OurTeam from "@/Components/OurTeam";
 import HeroSectionSecond from "@/Components/HeroSectionSecond";
+import Navbar from "@/Components/Navbar";
+import OurBenifits from "@/Components/OurBenifits";
 
 
  const Home = () => {
@@ -28,7 +30,10 @@ import HeroSectionSecond from "@/Components/HeroSectionSecond";
     <AboutUs />
     {/* <WhyUS /> */}
     <BenefitsSection />
+  
+    <OurBenifits />
     <OurTeam />
+      {/* <MeetOurTeam /> */}
     <OurClientsvertical />
     {/* <OurClients />
     <OurClientsSection /> */}

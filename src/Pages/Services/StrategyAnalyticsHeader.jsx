@@ -8,7 +8,7 @@ function StrategyAnalyticsHeader() {
   return (
     <>
       <OurApproach />
-        <FaqsSectionServices />
+        {/* <FaqsSectionServices /> */}
     </>
         
      
