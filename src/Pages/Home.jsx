@@ -2,20 +2,16 @@
 
 
 import HowPSWork from "../Components/HowPSWork";
-import AboutSecond from "../Components/AboutSecond";
 import AboutUs from "../Components/AboutUS";
 import HeroSection from "../Components/HeroSection";
 import OurClientsvertical from "@/Components/OurClientsvertical";
 import ContactSection from "@/Components/ContactSection";
 import BenefitsSection from "@/Components/BenefitsSection";
-import MeetOurTeam from "@/Components/MeetOurTeam";
 import MediaSection from "@/Components/MediaSection";
 import TransformSection from "@/Components/TransformSection";
-import Footer from "@/Components/Footer";
-import FooterSecond from "@/Components/FooterSecond";
 import FaqsSection from "@/Components/FaqsSection";
+import OurTeam from "@/Components/OurTeam";
 import HeroSectionSecond from "@/Components/HeroSectionSecond";
-import Navbar from "@/Components/Navbar";
 
 
  const Home = () => {
@@ -24,6 +20,7 @@ import Navbar from "@/Components/Navbar";
     <div className="pt-18"></div>
     {/* <Navbar /> */}
     <HeroSection />
+    <HeroSectionSecond />
     <HowPSWork />
     {/* <AboutSecond /> */}
     {/* <AboutThird /> */}
@@ -31,7 +28,7 @@ import Navbar from "@/Components/Navbar";
     <AboutUs />
     {/* <WhyUS /> */}
     <BenefitsSection />
-      {/* <MeetOurTeam /> */}
+    <OurTeam />
     <OurClientsvertical />
     {/* <OurClients />
     <OurClientsSection /> */}

@@ -26,7 +26,7 @@ const logos = [
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwliefbi5kHbits.png",
 ];
 
-export default function OurClients() {
+export default function OurClientsPage() {
   return (
     <section className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6">
@@ -42,7 +42,7 @@ export default function OurClients() {
         </div>
 
         {/* Logos Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 items-center ">
           {logos.map((logo, index) => (
             <motion.div
               key={index}
@@ -50,12 +50,12 @@ export default function OurClients() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
               viewport={{ once: true }}
-              className="flex items-center justify-center p-4 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300"
+              className="flex items-center justify-center p-4 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300 border_bottom"
             >
               <img
                 src={logo}
                 alt="Client Logo"
-                className="max-h-14 object-contain grayscale hover:grayscale-0 transition duration-300"
+                className="max-h-14 object-contain  transition duration-300"
               />
             </motion.div>
           ))}
