@@ -2,11 +2,11 @@ import { useEffect, useRef } from "react";
 import HeadingBadge from "@/Components/HeadingBadge";
 
 const team = [
-  { name: "Ashish Mahajan", role: "CEO", img: "https://imgs.search.brave.com/gqxLvVo_BNZ0camx4WBN7o3Fax_K9Gg39dC-HEpCP4I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvcHN0b3J5LmNv/bS9tYWdpY3BhZ2Vz/L05BTUUvMTZpd2w0/a2h6d2xpYmpjd3pu/YXNoaXNoLTMwMHgz/MDAuanBn" },
-  { name: "Ashish Mahajan", role: "CEO", img: "https://imgs.search.brave.com/gqxLvVo_BNZ0camx4WBN7o3Fax_K9Gg39dC-HEpCP4I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvcHN0b3J5LmNv/bS9tYWdpY3BhZ2Vz/L05BTUUvMTZpd2w0/a2h6d2xpYmpjd3pu/YXNoaXNoLTMwMHgz/MDAuanBn" },
-  { name: "Ashish Mahajan", role: "CEO", img: "https://imgs.search.brave.com/gqxLvVo_BNZ0camx4WBN7o3Fax_K9Gg39dC-HEpCP4I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvcHN0b3J5LmNv/bS9tYWdpY3BhZ2Vz/L05BTUUvMTZpd2w0/a2h6d2xpYmpjd3pu/YXNoaXNoLTMwMHgz/MDAuanBn" },
-  { name: "Ashish Mahajan", role: "CEO", img: "https://imgs.search.brave.com/gqxLvVo_BNZ0camx4WBN7o3Fax_K9Gg39dC-HEpCP4I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvcHN0b3J5LmNv/bS9tYWdpY3BhZ2Vz/L05BTUUvMTZpd2w0/a2h6d2xpYmpjd3pu/YXNoaXNoLTMwMHgz/MDAuanBn" },
-  { name: "Ashish Mahajan", role: "CEO", img: "https://imgs.search.brave.com/gqxLvVo_BNZ0camx4WBN7o3Fax_K9Gg39dC-HEpCP4I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvcHN0b3J5LmNv/bS9tYWdpY3BhZ2Vz/L05BTUUvMTZpd2w0/a2h6d2xpYmpjd3pu/YXNoaXNoLTMwMHgz/MDAuanBn" },
+  { name: "Ashish Mahajan", role: "CEO", img: "https://b5hgk18vhnzpmz1w.public.blob.vercel-storage.com/uploads/temp-01mansi/1774265775936-lajsaltkh4.webp" },
+  { name: "Gaurav Sharma", role: "Digital", img: "https://b5hgk18vhnzpmz1w.public.blob.vercel-storage.com/uploads/temp-01mansi/1774265929892-n6tm255msva.jpeg" },
+  { name: "Kanhiya Lal", role: "Digital", img: "https://imgs.search.brave.com/gqxLvVo_BNZ0camx4WBN7o3Fax_K9Gg39dC-HEpCP4I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvcHN0b3J5LmNv/bS9tYWdpY3BhZ2Vz/L05BTUUvMTZpd2w0/a2h6d2xpYmpjd3pu/YXNoaXNoLTMwMHgz/MDAuanBn" },
+  { name: "Dinil Jayadas", role: "Digital", img: "https://imgs.search.brave.com/gqxLvVo_BNZ0camx4WBN7o3Fax_K9Gg39dC-HEpCP4I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvcHN0b3J5LmNv/bS9tYWdpY3BhZ2Vz/L05BTUUvMTZpd2w0/a2h6d2xpYmpjd3pu/YXNoaXNoLTMwMHgz/MDAuanBn" },
+  { name: "Ashish Mahajan", role: "Digital", img: "https://imgs.search.brave.com/gqxLvVo_BNZ0camx4WBN7o3Fax_K9Gg39dC-HEpCP4I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvcHN0b3J5LmNv/bS9tYWdpY3BhZ2Vz/L05BTUUvMTZpd2w0/a2h6d2xpYmpjd3pu/YXNoaXNoLTMwMHgz/MDAuanBn" },
 ];
 
 export default function OurTeam() {
@@ -73,14 +73,14 @@ export default function OurTeam() {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-105 transition-all duration-500"
+                  className="w-full h-full object-cover hover:scale-105 transition-all duration-500"
                 />
               </div>
 
-              <h4 className="text-[18px] font-medium text-gray-900">
+              <h4 className="text-[20px] font-medium text-gray-900">
                 {member.name}
               </h4>
-              <p className="text-[14px] text-gray-500 mt-1">
+              <p className="text-[16px] text-gray-500 mt-1">
                 {member.role}
               </p>
             </div>

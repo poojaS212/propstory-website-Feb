@@ -7,43 +7,81 @@ const mediaData = [
     title: "Propstory – Data-Driven Platform for Real Estate Buyers and Investors – Company Profile on Startup Talky",
     source: "Starup Talky • 30 Jan 2019",
     logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3lszmStartup-Talky.png",
-    link: "/media/forbes",
+    link: "https://startuptalky.com/propstory-story-founder-funding/",
     featured: true,
   },
   {
     name: "Economic Times",
-    title: "Propstory emerges as top digital real estate marketing brand",
+    title: "2018-A mixed bag for Indian real estate industry: Ashish Mahajan, PropStory – Economic Times (31 Dec 2018)",
     source: "ET Realty • Feb 2025",
-    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3lszmStartup-Talky.png",
-    link: "/media/economic-times",
+    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3n0shEt-Reality.png",
+    link: "https://realty.economictimes.indiatimes.com/e/year-ender-2018/news/detail/5497",
   },
   {
     name: "Hindustan Times",
-    title: "New-age agencies transforming luxury property branding",
+    title: "PropStory now targets Southern India, starts operations in Bangalore – Business Standard",
     source: "HT Business • Mar 2025",
-    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3lszmStartup-Talky.png",
-    link: "/media/hindustan-times",
+    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3pf8eBusiness-Standard.png",
+    link: "https://www.business-standard.com/article/news-ani/propstory-now-targets-southern-india-starts-operations-in-bangalore-118091800718_1.html",
   },
   {
     name: "Times of India",
-    title: "Propstory’s creative approach reshaping real estate media",
+    title: "Gurugram-based PropStory bridges communication gaps between realty buyers, sellers – in YourStory",
     source: "TOI • Apr 2025",
-    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3lszmStartup-Talky.png",
-    link: "/media/times-of-india",
+    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3rmthYour-story.png",
+    link: "https://yourstory.com/2018/07/gurugram-based-propstory-bridges-communication-gaps-realty-buyers-sellers",
   },
   {
     name: "Business Standard",
-    title: "Propstory sets benchmark for premium property campaigns",
+    title: " Mumbai Development Plan 2034 – will it make Mumbai great again? in Deccan Chronicle",
     source: "BS • May 2025",
-    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3lszmStartup-Talky.png",
+    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3c7tydeccan.png",
+    link: "https://www.deccanchronicle.com/business/in-other-news/280518/mumbai-development-plan-2034-will-it-make-mumbai-great-again.html",
+  },
+  {
+    name: "Mint",
+    title: "PropStory featured in SutraHR’s list of “Top 100 Startups to Watch” in 2018",
+    source: "Mint • Jun 2025",
+    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3tvj2Sutra-HR.png",
+    link: "https://www.sutrahr.com/top-100-startups-2018/",
+  },
+
+
+
+  {
+    name: "Hindustan Times",
+    title: " How can the Interim Budget benefit the real estate sector? All you need to know – Qrius (31 Jan 2019)",
+    source: "HT Business • Mar 2025",
+    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3jo3xQius.-black.png",
+    link: "https://qrius.com/",
+  },
+  {
+    name: "Times of India",
+    title: "Doing at the intersaction of design and elegence to create great work for living breathing human being, sellers – in YourStory",
+    source: "TOI • Apr 2025",
+    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3ht6uTH.png",
+    link: "https://www.thehindu.com/todays-paper/tp-features/tp-propertyplus/will-the-buyer-benefit-ultimately/article26894284.ece",
+  },
+  {
+    name: "Business Standard",
+    title: "Commercial realty growth is driving Bengaluru’s residential realty growth – Deccan Chronicle (21 May 2019)",
+    source: "BS • May 2025",
+    logo: "https://www.deccanchronicle.com/business/in-other-news/210519/commercial-realty-growth-is-driving-bengalurus-residential-realty-g.html",
     link: "/media/business-standard",
   },
   {
     name: "Mint",
-    title: "Luxury real estate marketing enters a new era with Propstory",
+    title: "We are featured in a case study as just one of the 3 Indian firms to have used Taboola on a large scale for content marketing and lead generation for the vast realty sector in the country – Taboola",
     source: "Mint • Jun 2025",
-    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid3lszmStartup-Talky.png",
-    link: "/media/mint",
+    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid2v703Untitled-12.png",
+    link: "https://www.taboola.com/resources/case-studies/propstory",
+  },
+   {
+    name: "Mint",
+    title: " Doing at the intersaction of design and elegence to create great work for living breathing human being",
+    source: "Mint • Jun 2025",
+    logo: "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlid2obramoney-control.png",
+    link: "https://www.moneycontrol.com/news/business/real-estate/nhb-asks-housing-finance-companies-to-avoid-financing-subvention-schemes-4232931.html",
   },
 ];
 
@@ -127,7 +165,7 @@ const MediaSection = () => {
                 <img
                   src={item.logo}
                   alt={item.name}
-                  className="h-9 mb-5 object-contain"
+                  className="h-20 mb-1 object-contain"
                 />
 
                 {/* Headline */}
@@ -141,9 +179,10 @@ const MediaSection = () => {
                 </p>
 
                 {/* Arrow */}
-                <p className="mt-4 text-sm font-medium text-yellow-700 group-hover:underline">
+                {/* <p className="mt-4 text-sm font-medium text-yellow-700 group-hover:underline">
                   Read Feature →
-                </p>
+                </p> */}
+                
               </motion.a>
             ))}
         </div>

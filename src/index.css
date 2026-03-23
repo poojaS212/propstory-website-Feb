@@ -193,3 +193,7 @@ body{
 .scrollbar-hide::-webkit-scrollbar {
   display: none;             /* Chrome, Safari */
 }
+
+.border_bottom:hover{
+  border-bottom: 2px solid rgb(11, 11, 62);
+}

@@ -7,25 +7,30 @@ const videos = [
   {
     title: "Elevate your brand with our tailored strategies. Unlock your online potential today.",
     src: "https://propstory.in/ProjectVideos/PropstoryCHENNAI.mp4",
+    thumbnail: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
   },
   {
     title: "Elevate your brand with our tailored strategies. Unlock your online potential today.",
     src: "https://propstory.in/ProjectVideos/PropstorymumbaiVideo.mp4",
+    thumbnail: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80",
   },
   {
        title: "Elevate your brand with our tailored strategies. Unlock your online potential today.",
 
     src: "https://propstory.in/ProjectVideos/PropstoryDelhi NCR.mp4",
+thumbnail: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80",
   },
   {
        title: "Elevate your brand with our tailored strategies. Unlock your online potential today.",
 
     src: "https://propstory.in/ProjectVideos/propstory1.mp4",
+thumbnail: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80",
   },
   {
        title: "Elevate your brand with our tailored strategies. Unlock your online potential today.",
 
     src: "https://propstory.in/ProjectVideos/propstory2.mp4",
+thumbnail: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80",
   },
 ];
 
@@ -33,7 +38,7 @@ export default function TransformSection() {
   const [activeVideo, setActiveVideo] = useState(videos[0]);
 
   return (
-    <section className="w-full py-24 bg-[#fbf8f3]">
+    <section className="w-full pb-24 bg-[#fbf8f3]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Heading */}
              <motion.div
@@ -81,7 +86,7 @@ export default function TransformSection() {
           {/* SIDE 4 SMALL VIDEOS */}
           <div className="flex flex-col gap-5">
             {videos.slice(1).map((video, index) => {
-              const isActive = activeVideo.id === video.id;
+              const isActive = activeVideo.src === video.src;
 
               return (
                 <button
@@ -96,11 +101,11 @@ export default function TransformSection() {
                 >
                   {/* Thumbnail */}
                   <div className="relative w-28 h-20 flex-shrink-0">
-                    <img
-                      src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
-                      alt={video.title}
-                      className="w-full h-full object-cover"
-                    />
+                   <img
+  src={video.thumbnail || "https://via.placeholder.com/300x200?text=Video"}
+  alt={video.title}
+  className="w-full h-full object-cover"
+/>
 
                     {/* Play Overlay */}
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
