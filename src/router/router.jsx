@@ -6,6 +6,10 @@ import CRMImplementations from "@/Pages/Services/CRMImplementations";
 import LeadGeneration from "@/Pages/Services/LeadGeneration";
 import StrategyAnalyticsHeader from "@/Pages/Services/StrategyAnalyticsHeader";
 import { createBrowserRouter } from "react-router-dom";
+import OurClientsPage from "@/Pages/Work/OurClientsPage";
+import CaseStudiesSection from "@/Pages/Work/CaseStudiesSection";
+import TestimonialsSection from "@/Pages/Work/TestimonialsSection";
+import AboutUs from "@/Components/AboutUS";
 
 
 export const router = createBrowserRouter([
@@ -35,7 +39,20 @@ export const router = createBrowserRouter([
               {
                 path: "crm-implementions",
                 element: <CRMImplementations />
-              }
+              },
+              {
+                path: "/our-clients",
+                element: <OurClientsPage />
+              },
+               {
+                path: "/case-studies",
+                element: <CaseStudiesSection />
+              },
+              {
+                path: "/testimonials",
+                element: <TestimonialsSection />
+              },
+
         ]
     }
 ])

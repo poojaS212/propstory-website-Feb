@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -61,7 +62,7 @@ export default function Navbar() {
                   <Link to="/case-studies" className="hover:text-gray-300">
                     Case Studies
                   </Link>
-                  <Link to="/testimonial" className="hover:text-gray-300">
+                  <Link to="/testimonials" className="hover:text-gray-300">
                     Testimonial
                   </Link>
                 </div>
@@ -104,7 +105,7 @@ export default function Navbar() {
                     AI Chatbots
                   </Link>
                   <Link
-                    to="/crm-implementations"
+                    to="/crm-implementions"
                     className="hover:text-gray-300"
                   >
                     CRM Implementations
@@ -115,8 +116,8 @@ export default function Navbar() {
           </div>
 
           {/* Other Links */}
-          <Link
-            to="/about"
+          {/* <Link
+            to="/about-us"
             className={
               scrolled
                 ? "text-gray-300 hover:text-white"
@@ -124,10 +125,19 @@ export default function Navbar() {
             }
           >
             About
-          </Link>
+          </Link> */}
 
-          <Link
-            to="/insights"
+          <HashLink smooth to="/#about-us" className={
+              scrolled
+                ? "text-gray-300 hover:text-white"
+                : "text-gray-700 hover:text-black"
+            }>
+          About
+        </HashLink>
+
+
+          <HashLink smooth
+            to="/#insights"
             className={
               scrolled
                 ? "text-gray-300 hover:text-white"
@@ -135,7 +145,7 @@ export default function Navbar() {
             }
           >
             Insights
-          </Link>
+          </HashLink>
 
           <Link
             to="/careers"
@@ -150,6 +160,7 @@ export default function Navbar() {
         </nav>
 
         {/* CTA */}
+        <HashLink smooth to="/#contact">
         <button
           className={`px-5 py-2 rounded-full font-medium transition
           ${
@@ -160,6 +171,8 @@ export default function Navbar() {
         >
           Let’s Talk
         </button>
+        </HashLink>
+       
       </div>
     </header>
   );

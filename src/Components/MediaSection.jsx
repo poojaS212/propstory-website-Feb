@@ -90,7 +90,7 @@ const MediaSection = () => {
   const featuredItem = mediaData.find((item) => item.featured);
 
   return (
-    <section className="w-full bg-[#faf7f2] py-24 px-6 relative overflow-hidden">
+    <section id="insights" className="w-full bg-[#faf7f2] py-24 px-6 relative overflow-hidden">
       {/* Subtle Background Glow */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-yellow-200/20 blur-[120px] rounded-full" />
 
