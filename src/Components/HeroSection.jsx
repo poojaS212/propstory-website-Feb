@@ -3,6 +3,7 @@ import RotatingText from "./RotatingText";
 import { useEffect, useState } from "react";
 import shape from "../../public/images/shape.png";
 import RotatingTextHalden from "./RotatingTextHalden";
+import { HashLink } from 'react-router-hash-link';
 
 
 const propstoryColors = [
@@ -123,13 +124,18 @@ export default function HeroSection() {
 
         {/* Buttons */}
         <div className="mt-12 flex flex-col sm:flex-row items-center gap-4 pointer-events-auto">
-          <button className="rounded-full bg-black px-8 py-4 text-white font-medium hover:bg-gray-800 transition">
+        <HashLink smooth to="/#contact">
+        <button className="rounded-full bg-black px-8 py-4 text-white font-medium hover:bg-gray-800 transition">
             Contact Us
           </button>
-
-          <button className="rounded-full border border-gray-300 px-8 py-4 text-black font-medium hover:bg-gray-100 transition">
+        </HashLink>
+          
+        <HashLink smooth to="/#how-ps-work">
+        <button className="rounded-full border border-gray-300 px-8 py-4 text-black font-medium hover:bg-gray-100 transition">
             Explore More
           </button>
+        </HashLink>
+          
         </div>
 
         </div>

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function ContactSection() {
   return (
-    <section className="relative overflow-hidden bg-[#0b1220] py-24 text-white">
+    <section id="contact" className="relative overflow-hidden bg-[#0b1220] py-24 text-white">
 
       {/* ambient depth gradients */}
       <motion.div

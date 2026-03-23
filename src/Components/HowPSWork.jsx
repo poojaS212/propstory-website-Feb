@@ -73,7 +73,7 @@ export default function HowPSWork() {
   }, []);
 
   return (
-    <section ref={containerRef} className="bg-[#FCF5E1] py-20">
+    <section id="how-ps-work" ref={containerRef} className="bg-[#FCF5E1] py-20">
       {/* Header */}
       <div className="text-center px-4 mb-16">
         <h4 className="text-4xl md:text-5xl font-extrabold text-gray-900">

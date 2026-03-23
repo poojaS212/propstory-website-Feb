@@ -41,7 +41,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section
+    <section id="about-us"
       ref={sectionRef}
       className="w-full bg-white py-32 px-6 md:px-20"
     >
