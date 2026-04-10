@@ -88,18 +88,19 @@ export default function Navbar() {
 
             {openMenu === "services" && (
               <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-60">
-                <div className="rounded-xl bg-black text-white shadow-xl p-4 flex flex-col gap-3">
-                  <Link
-                    to="/digital-strategy-analytics"
-                    className="hover:text-gray-300"
-                  >
-                    Digital Strategy & Analytics
-                  </Link>
+                <div className="rounded-xl bg-black text-white shadow-xl p-4 text-center flex flex-col gap-3">
+                 
                   <Link
                     to="/lead-generation"
                     className="hover:text-gray-300"
                   >
                     Lead Generation
+                  </Link>
+                   <Link
+                    to="/digital-strategy-analytics"
+                    className="hover:text-gray-300"
+                  >
+                    Performance Marketing
                   </Link>
                   <Link to="/ai-chatbots" className="hover:text-gray-300">
                     AI Chatbots
@@ -135,6 +136,16 @@ export default function Navbar() {
           About
         </HashLink>
 
+<HashLink smooth
+            to="/#clients"
+            className={
+              scrolled
+                ? "text-gray-300 hover:text-white"
+                : "text-gray-700 hover:text-black"
+            }
+          >
+            Clients
+          </HashLink>
 
           <HashLink smooth
             to="/#insights"
@@ -147,7 +158,7 @@ export default function Navbar() {
             Insights
           </HashLink>
 
-          <Link
+          {/* <Link
             to="/careers"
             className={
               scrolled
@@ -156,7 +167,7 @@ export default function Navbar() {
             }
           >
             Careers
-          </Link>
+          </Link> */}
         </nav>
 
         {/* CTA */}

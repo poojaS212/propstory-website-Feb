@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import PageBanner from "../../Components/PageBanner"; 
 
 
 const caseStudiesData = [
@@ -247,10 +248,16 @@ export default function CaseStudiesSection() {
 
   return (
     <section className="bg-gradient-to-b from-white to-gray-100 py-20">
+
+        <PageBanner
+                    title="Success Stories That Drive Confidence"
+                    subtitle="A closer look at how PropStort delivers measurable outcomes for homeowners and investors."
+                    bgImage="https://magicpage-dev.propstory.com/ImageUploads/ravi%20temp/1nnx5eapkmnsm4516.webp"
+                  />
       <div className="max-w-7xl mx-auto px-6">
 
         {/* REFINED CITY TABS */}
-<div className="flex justify-center mb-14">
+<div className="flex justify-center my-14">
   <div className="relative flex bg-gray-100/70 backdrop-blur-md p-1.5 rounded-full shadow-sm">
 
     {caseStudiesData.map((item) => {

@@ -1,16 +1,11 @@
 
-import FaqsSectionServices from '@/Components/FaqsSectionServices'
+import Leadpage from '@/Components/Leadpage'
 import React from 'react'
 
 
 function LeadGeneration() {
   return (
-    <div>
-      <h2>
-        I am Lead Gen Page
-      </h2>
-      
-    </div>
+    <Leadpage />
   )
 }
 

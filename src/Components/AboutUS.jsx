@@ -49,15 +49,11 @@ const AboutUs = () => {
         
         {/* LEFT CONTENT */}
         <div ref={textRef}>
-          <span className="block text-sm tracking-widest text-gray-500 uppercase">
-            About
-          </span>
+         <span class="inline-block bg-black text-white text-xs px-4 py-1 rounded-full tracking-widest ">ABOUT</span>
 
-          <h2 className="text-5xl md:text-6xl font-serif font-medium text-gray-900">
-            What We Do
-          </h2>
+          <h2 class="text-[34px] md:text-[48px] font-semibold text-gray-900 leading-tight max-w-3xl mx-auto pt-5">What We Do</h2>
 
-          <p className="text-lg leading-relaxed text-gray-700 max-w-xl">
+          <p className="text-lg leading-relaxed text-gray-700 max-w-xl pt-4">
             Founded in 2015, PropStory has grown into a high ROI-driven,
             preferred digital marketing partner for many of India’s
             best-known and well-respected real estate brands.

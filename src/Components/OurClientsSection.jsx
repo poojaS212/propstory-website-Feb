@@ -29,9 +29,6 @@ export default function OurClientsSection() {
   return (
    <>
    
-    <section className="bg-white h-[20vh]">
-      
-    </section>
     <section className="relative overflow-hidden pt-24 pb-">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-[#fdf8f1]" />

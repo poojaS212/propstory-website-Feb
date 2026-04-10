@@ -197,3 +197,24 @@ body{
 .border_bottom:hover{
   border-bottom: 2px solid rgb(11, 11, 62);
 }
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.success_msg,
+.error_msg {
+    display: none;
+    text-align: center;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease;
+}

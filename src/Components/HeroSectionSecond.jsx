@@ -1,6 +1,8 @@
 import Antigravity from "./Antigravity";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
+import { HashLink } from 'react-router-hash-link';
+
 
 const propstoryColors = [
   "rgba(30, 120, 220, 1)",
@@ -61,8 +63,18 @@ export default function HeroSectionSecond() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden bg-[#F8FAFC] flex items-center justify-center" style={{ fontFamily: "'Playfair Display', serif" }}>
+<motion.div
+  animate={{ y: [0, -30, 0] }}
+  transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+  className="absolute w-[400px] h-[400px] bg-indigo-400/20 rounded-full blur-3xl top-20 left-10"
+/>
 
-      <Antigravity
+<motion.div
+  animate={{ y: [0, 40, 0] }}
+  transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+  className="absolute w-[400px] h-[400px] bg-[#fcf5e1d9] rounded-full blur-3xl bottom-10 right-10"
+/>
+      {/* <Antigravity
         count={1000}
         magnetRadius={6}
         ringRadius={7}
@@ -79,18 +91,25 @@ export default function HeroSectionSecond() {
         particleShape="capsule"
         fieldStrength={10}
         opacity={1}
-      />
+      /> */}
 
       <div className="relative z-20 text-center px-6 max-w-6xl">
-
-        <h1 className="font-display text-[42px] md:text-[70px] lg:text-[90px] font-semibold tracking-[-0.03em] leading-[1.05] text-black">
+{/* Logo */}
+        <div className="mb-4">
+          <img
+            src="https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli8ekjocPS_logo.png"
+            alt="Logo"
+            className="w-32 mx-auto"
+          />
+        </div>
+        <h1 className="font-display text-[42px] md:text-[70px] lg:text-[80px] font-semibold tracking-[-0.03em] leading-[1.05] text-black">
 
           <span className="block">
             Result-Driven Digital
           </span>
 
           {/* Unique Morph Animation */}
-          <div className="relative italic h-[1.2em]  flex justify-center items-center">
+          <div className="relative italic h-[1em] flex justify-center items-center">
 
             {/* Glow Behind Word */}
             <motion.div
@@ -132,29 +151,26 @@ export default function HeroSectionSecond() {
           </div>
         </h1>
 
-        <p className="mt-10 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed font-medium">
+        <p className="mt-10 text-lg md:text-md text-gray-600 max-w-2xl mx-auto leading-relaxed font-medium">
           We build high-performance marketing engines for real estate brands
           that demand measurable growth and scalable results.
         </p>
 
-        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-5">
+        <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-5">
 
   {/* Primary Button */}
-  <button className="group relative px-8 py-3 rounded-full bg-black text-white text-sm md:text-base font-semibold tracking-wide transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_25px_rgba(99,102,241,0.25)]">
-
-    <span className="relative z-10">Start a Project</span>
-
-    {/* Soft Hover Glow */}
-    <span className="absolute inset-0 rounded-full bg-gradient-to-r from-[#312E81] via-[#6366F1] to-[#A855F7] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-
-  </button>
-
-  {/* Secondary Button */}
-  <button className="px-8 py-3 rounded-full border border-black/70 text-black text-sm md:text-base font-semibold tracking-wide transition-all duration-300 hover:bg-black hover:text-white hover:-translate-y-1">
-
-    View Case Studies
-
-  </button>
+ <HashLink smooth to="/#contact">
+         <button className="rounded-full bg-black px-8 py-2 text-white font-medium hover:bg-gray-800 transition">
+             Contact Us
+           </button>
+         </HashLink>
+           
+         <HashLink smooth to="/#how-ps-work">
+         <button className="rounded-full border border-gray-300 px-8 py-2 text-black font-medium hover:bg-gray-100 transition">
+             Explore More
+           </button>
+         </HashLink>
+           
 
 </div>
 
