@@ -21,7 +21,7 @@ import OurBenifits from "@/Components/OurBenifits";
    <>
     <div className="pt-18"></div>
     {/* <Navbar /> */}
-    <HeroSection />
+    {/* <HeroSection /> */}
     <HeroSectionSecond />
     <HowPSWork />
     {/* <AboutSecond /> */}
@@ -29,7 +29,7 @@ import OurBenifits from "@/Components/OurBenifits";
     {/* <AboutStickyScroll /> */}
     <AboutUs />
     {/* <WhyUS /> */}
-    <BenefitsSection />
+    {/* <BenefitsSection /> */}
   
     <OurBenifits />
     <OurTeam />

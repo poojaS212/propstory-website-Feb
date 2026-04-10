@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import PageBanner from "../../Components/PageBanner";
+
 
 const logos = [
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w5rmmadani.png",
@@ -28,21 +30,27 @@ const logos = [
 
 export default function OurClientsPage() {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-24 md:px-6">
+      <PageBanner
+        title="Empowering Our Clients"
+        subtitle="Building long-term relationships through transparency, expertise, and proven results."
+        bgImage="https://magicpage-dev.propstory.com/ImageUploads/ravi%20temp/1nnx5eapkmnsm3s6q.webp"
+      />
+
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16 pt-14">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Our Clients
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Trusted by India’s leading real estate developers across metro cities.
           </p>
-        </div>
+        </div> */}
 
         {/* Logos Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 items-center ">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 items-center pt-14">
           {logos.map((logo, index) => (
             <motion.div
               key={index}

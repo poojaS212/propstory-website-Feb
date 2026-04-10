@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import PageBanner from "../../Components/PageBanner"; 
 
 const testimonials = [
   {
@@ -74,6 +75,12 @@ export default function TestimonialsSection() {
 
   return (
     <section className=" text-white py-20">
+       <PageBanner
+              title="Voices of Our Happy Clients"
+              subtitle="Hear directly from the people who’ve experienced seamless and successful property solutions with us."
+              bgImage="https://magicpage-dev.propstory.com/ImageUploads/ravi%20temp/1nnx5eapkmnsm3i2s.webp"
+            />
+      
        <div className="text-center my-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-black">
             Trusted by Homeowners & Investors

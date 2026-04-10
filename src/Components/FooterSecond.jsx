@@ -1,6 +1,7 @@
 // Footer.jsx
 import React from "react";
 import { motion } from "framer-motion";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const offices = [
   {
@@ -118,6 +119,28 @@ export default function Footer() {
               </a>
             ))}
           </div>
+          {/* Social Icons */}
+<div className="flex gap-4">
+  <a href="https://www.facebook.com/PropStoryIndia/" target="_blank" className="w-9 h-9 flex items-center justify-center rounded-full border border-black/20 hover:bg-black hover:text-white transition">
+    <FaFacebookF size={14} />
+  </a>
+
+  <a href="https://www.instagram.com/propstory/" target="_blank" className="w-9 h-9 flex items-center justify-center rounded-full border border-black/20 hover:bg-black hover:text-white transition">
+    <FaInstagram size={14} />
+  </a>
+
+  <a href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F18031950%2F" target="_blank" className="w-9 h-9 flex items-center justify-center rounded-full border border-black/20 hover:bg-black hover:text-white transition">
+    <FaLinkedinIn size={14} />
+  </a>
+
+  <a href="https://x.com/propstory" target="_blank" className="w-9 h-9 flex items-center justify-center rounded-full border border-black/20 hover:bg-black hover:text-white transition">
+    <FaTwitter size={14} />
+  </a>
+
+  <a href="https://www.youtube.com/@propstory2655" target="_blank" className="w-9 h-9 flex items-center justify-center rounded-full border border-black/20 hover:bg-black hover:text-white transition">
+    <FaYoutube size={14} />
+  </a>
+</div>
 
           {/* Copyright */}
           <p className="font-mono text-neutral-500 text-center">

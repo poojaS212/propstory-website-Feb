@@ -100,8 +100,7 @@ export default function OurClientsvertical() {
 
   </div>
 </section>
-    <section className="bg-white h-[20vh]"></section>
-
+ 
     </>
   );
 }
@@ -111,7 +110,7 @@ export default function OurClientsvertical() {
 /* -------------------------------- */
 function LogoColumn({ logos, direction = "up", speed = 20 }) {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden" id="clients">
       <motion.div
         className="flex flex-col gap-6 py-6"
         animate={{

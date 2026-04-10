@@ -98,7 +98,7 @@ export default function HowPSWork() {
 
               {/* Left */}
               <div className="relative">
-                <span className="absolute -top-10 text-[6rem] font-extrabold text-white/10">
+                <span className="absolute -top-[80px] text-[6rem] font-extrabold text-white/20">
                   {card.step}
                 </span>
 
