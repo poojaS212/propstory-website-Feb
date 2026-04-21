@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HorizontalStats from "./HorizontalStats";
+import { Link } from "react-router-dom";
+
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -65,6 +67,12 @@ const AboutUs = () => {
             information divide between the product and the customer.
           </p>
         <HorizontalStats />
+
+        <div>
+           <Link to="/real-estate-marketing-companies-in-bangalore" className="rounded-full bg-black px-8 py-2 text-white font-medium hover:bg-gray-800 transition">
+                    Know More
+                  </Link>
+        </div>
         
         </div>
 

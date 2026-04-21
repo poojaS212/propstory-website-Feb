@@ -1,7 +1,7 @@
-import Antigravity from "./Antigravity";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import { HashLink } from 'react-router-hash-link';
+import { Link } from "react-router-dom";
 
 
 const propstoryColors = [
@@ -164,13 +164,18 @@ export default function HeroSectionSecond() {
              Contact Us
            </button>
          </HashLink>
+
+
+          <Link to="/real-estate-marketing-companies-in-bangalore" className="rounded-full border border-gray-300 px-8 py-2 text-black font-medium hover:bg-gray-100 transition">
+                    Explore More
+                  </Link>
            
-         <HashLink smooth to="/#how-ps-work">
+         {/* <HashLink smooth to="/#how-ps-work">
          <button className="rounded-full border border-gray-300 px-8 py-2 text-black font-medium hover:bg-gray-100 transition">
              Explore More
            </button>
-         </HashLink>
-           
+         </HashLink> */}
+          
 
 </div>
 

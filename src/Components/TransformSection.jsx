@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Play } from "lucide-react";
 import HeadingBadge from "@/Components/HeadingBadge";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 const videos = [
   {
@@ -53,7 +55,10 @@ export default function TransformSection() {
       
 
           <p className="mt-4 text-gray-600 text-xl">
-             Cinematic Digital Experiences for Luxury Brands  </p>
+            <Link to="/real-estate-marketing-companies-in-bangalore">
+                    Cinematic Digital Experiences for Luxury Brands 
+                  </Link>
+              </p>
         </motion.div>
       
 

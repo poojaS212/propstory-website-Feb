@@ -9,7 +9,7 @@ import { createBrowserRouter } from "react-router-dom";
 import OurClientsPage from "@/Pages/Work/OurClientsPage";
 import CaseStudiesSection from "@/Pages/Work/CaseStudiesSection";
 import TestimonialsSection from "@/Pages/Work/TestimonialsSection";
-import AboutUs from "@/Components/AboutUS";
+import { RealEstatePage } from "@/Pages/Seo/RealEstatePage";
 
 
 export const router = createBrowserRouter([
@@ -51,6 +51,10 @@ export const router = createBrowserRouter([
               {
                 path: "/testimonials",
                 element: <TestimonialsSection />
+              },
+              {
+                path: "/real-estate-marketing-companies-in-bangalore",
+                element: <RealEstatePage />
               },
 
         ]

@@ -31,7 +31,7 @@ export default function HorizontalStats() {
   return (
     <div ref={sectionRef} className="w-full max-w-5xl mx-auto">
       
-     <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-16 py-8 text-center sm:text-left">
+     <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-16 pt-8 text-center sm:text-left">
         {stats.map((item, index) => (
           <div key={index} className="flex flex-col items-center sm:items-start">
             
