@@ -1,5 +1,6 @@
 import React from "react";
 import { Sparkles, Atom, Handshake } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const OurBenifits = () => {
   return (
@@ -30,7 +31,9 @@ const OurBenifits = () => {
             <Sparkles className="mb-5 text-gray-700" size={30} />
 
             <h3 className="text-[20px] font-semibold text-black mb-3">
-              Strategic, Not Generic
+              <Link to="/real-estate-marketing-companies-in-bangalore">
+                    Strategic, Not Generic
+                  </Link>
             </h3>
 
             <p className="text-gray-600 text-[15px] leading-relaxed">
@@ -45,7 +48,9 @@ const OurBenifits = () => {
             <Atom className="mb-5 text-gray-700" size={30} />
 
             <h3 className="text-[20px] font-semibold text-black mb-3">
-              Tech-Driven Expertise
+              <Link to="/real-estate-marketing-companies-in-bangalore">
+                    Tech-Driven Expertise
+                  </Link>
             </h3>
 
             <p className="text-gray-600 text-[15px] leading-relaxed">
@@ -65,7 +70,9 @@ const OurBenifits = () => {
               <Handshake className="mb-5 text-gray-700" size={30} />
 
               <h3 className="text-[20px] font-semibold text-black mb-3">
-                Transparent, Collaborative Partnership
+                 <Link to="/real-estate-marketing-companies-in-bangalore">
+                    Transparent, Collaborative Partnership
+                  </Link>
               </h3>
 
               <p className="text-gray-600 text-[15px] leading-relaxed">

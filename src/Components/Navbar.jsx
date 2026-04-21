@@ -110,6 +110,7 @@ export default function Navbar() {
                 </div>
               )}
             </div>
+          
 
             <HashLink smooth to="/#about-us">About</HashLink>
             <HashLink smooth to="/#clients">Clients</HashLink>
