@@ -16,9 +16,9 @@ const propstoryColors = [
 
 const words = [
   "Marketing",
-  "Growth Systems",
+  "Growth\u00A0Systems",
   "Performance",
-  "Lead Engines",
+  "Lead\u00A0Engines",
   "Campaigns",
   "Conversions",
 ];
@@ -62,7 +62,7 @@ export default function HeroSectionSecond() {
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-[#F8FAFC] flex items-center justify-center" style={{ fontFamily: "'Playfair Display', serif" }}>
+    <section id="home" className="relative h-screen w-full overflow-hidden bg-[#F8FAFC] flex items-center justify-center" style={{ fontFamily: "'Playfair Display', serif" }}>
 <motion.div
   animate={{ y: [0, -30, 0] }}
   transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
@@ -102,14 +102,14 @@ export default function HeroSectionSecond() {
             className="w-32 mx-auto"
           />
         </div>
-        <h1 className="font-display text-[42px] md:text-[70px] lg:text-[80px] font-semibold tracking-[-0.03em] leading-[1.05] text-black">
+        <h1 className="font-display text-[35px] md:text-[70px] lg:text-[80px] font-semibold tracking-[-0.03em] leading-[1.05] text-black">
 
           <span className="block">
             Result-Driven Digital
           </span>
 
           {/* Unique Morph Animation */}
-          <div className="relative italic h-[1em] flex justify-center items-center">
+          <div className="relative italic h-[1.5em] flex justify-center items-center ">
 
             {/* Glow Behind Word */}
             <motion.div
@@ -117,7 +117,7 @@ export default function HeroSectionSecond() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 0.25, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="absolute w-[60%] h-[80%] bg-gradient-to-r from-[#312E81] via-[#6366F1] to-[#A855F7] blur-3xl rounded-full"
+              className="absolute w-[60%] h-[100%] bg-gradient-to-r from-[#312E81] via-[#6366F1] to-[#A855F7] blur-3xl rounded-full"
             />
 
             <AnimatePresence mode="wait">
@@ -142,7 +142,7 @@ export default function HeroSectionSecond() {
                   duration: 0.7,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="relative font-semibold bg-gradient-to-r from-[#312E81] via-[#6366F1] to-[#A855F7] bg-clip-text text-transparent"  style={{ fontFamily: "'Playfair Display', serif" }}
+                className="relative leading-24 font-semibold bg-gradient-to-r from-[#312E81] via-[#6366F1] to-[#A855F7] bg-clip-text text-transparent"  style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 {words[index]}
               </motion.span>

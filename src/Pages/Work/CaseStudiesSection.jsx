@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PageBanner from "../../Components/PageBanner"; 
+import Breadcrumb from "@/Components/Breadcrumb";
 
 
 const caseStudiesData = [
@@ -247,7 +248,7 @@ export default function CaseStudiesSection() {
   );
 
   return (
-    <section className="bg-gradient-to-b from-white to-gray-100 py-20">
+    <section className="bg-gradient-to-b from-white to-gray-100 px-5 py-20">
 
         <PageBanner
                     title="Success Stories That Drive Confidence"
@@ -255,7 +256,7 @@ export default function CaseStudiesSection() {
                     bgImage="https://magicpage-dev.propstory.com/ImageUploads/ravi%20temp/1nnx5eapkmnsm4516.webp"
                   />
       <div className="max-w-7xl mx-auto px-6">
-
+<Breadcrumb />
         {/* REFINED CITY TABS */}
 <div className="flex justify-center my-14">
   <div className="relative flex bg-gray-100/70 backdrop-blur-md p-1.5 rounded-full shadow-sm">
@@ -268,7 +269,7 @@ export default function CaseStudiesSection() {
           key={item.city}
           onClick={() => setActiveCity(item.city)}
           whileTap={{ scale: 0.96 }}
-          className="relative px-5 py-2 text-sm md:text-base font-medium rounded-full transition-colors duration-300"
+          className="relative px-4 py-2 text-sm md:text-base font-medium rounded-full transition-colors duration-300"
         >
           {isActive && (
             <motion.div

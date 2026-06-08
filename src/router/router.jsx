@@ -10,6 +10,8 @@ import OurClientsPage from "@/Pages/Work/OurClientsPage";
 import CaseStudiesSection from "@/Pages/Work/CaseStudiesSection";
 import TestimonialsSection from "@/Pages/Work/TestimonialsSection";
 import { RealEstatePage } from "@/Pages/Seo/RealEstatePage";
+import { Privacy } from "@/Pages/Privacy";
+import { Terms } from "@/Pages/Terms";
 
 
 export const router = createBrowserRouter([
@@ -37,7 +39,7 @@ export const router = createBrowserRouter([
                 element: <AIChatbots />
               },
               {
-                path: "crm-implementions",
+               path: "/crm-implementions",
                 element: <CRMImplementations />
               },
               {
@@ -54,8 +56,18 @@ export const router = createBrowserRouter([
               },
               {
                 path: "/real-estate-marketing-companies-in-bangalore",
-                element: <RealEstatePage />
+                element: <RealEstatePage />  
               },
+              {
+                path: "/privacy-policy",
+                element: <Privacy />
+              },
+              {
+                path: "/terms-conditions",
+                element: <Terms />
+              },
+               
+            
 
         ]
     }

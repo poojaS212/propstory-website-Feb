@@ -47,6 +47,8 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {/* Work */}
+
+            <HashLink smooth to="/#home">Home</HashLink>
             <div
               className="relative"
               onMouseEnter={() => setOpenMenu("work")}
@@ -158,6 +160,7 @@ export default function Navbar() {
       </header>
 
       {/* 🌫 BACKDROP */}
+      
       <AnimatePresence>
         {mobileOpen && (
           <>
@@ -168,6 +171,7 @@ export default function Navbar() {
               exit={{ opacity: 0 }}
               className="fixed inset-0 bg-black/40 backdrop-blur-sm z-40"
             />
+            
 
             {/* 📱 Mobile Menu */}
             <motion.div
@@ -177,6 +181,8 @@ export default function Navbar() {
               transition={{ duration: 0.3 }}
               className="fixed left-1/2 -translate-x-1/2 w-[90%] bg-black text-white rounded-2xl shadow-xl p-6 flex flex-col gap-4 z-50 md:hidden"
             >
+               <HashLink smooth to="/#home" onClick={handleCloseMenu}>Home</HashLink>
+
               {/* Work */}
               <button
   className="flex justify-between items-center w-full"

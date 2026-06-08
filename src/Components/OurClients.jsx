@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const logos = [
-  "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w5rmmadani.png",
+  "https://magicpage-dev.propstory.com/ImageUploads/ravi%20temp/1nnx5eapkmpp9yngd.webp",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w68n8BKC-28.png",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w6jgjELDECO-01-01.png",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w6taqEMAAR-01.png",
@@ -10,7 +10,7 @@ const logos = [
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w7rrjKOLTE%20PATIL-01.png",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w81qeMAHINDRA-01.png",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9x2bqgMETRO%20GROUP-01.png",
-  "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlieferk8SPAGROUP_11zon.png",
+  "https://magicpage-dev.propstory.com/ImageUploads/ravi%20temp/1nnx5eapkmpp3tctg.webp",
   "https://magicpage-dev.propstory.com/ImageUploads/VBHC%20Landscape/1nnx51q2hm71ht9gt.jpg",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9wb7jeNEW%20PORUR_11zon.png",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9wbm1mOZONE_11zon.png",
@@ -44,72 +44,66 @@ export default function OurClients() {
         viewport={{ once: true }}
       >
         {/* Heading */}
-      <div className="max-w-5xl mx-auto mb-20 grid grid-cols-12 gap-6 items-start">
+        <div className="max-w-5xl mx-auto mb-20 grid grid-cols-12 gap-6 items-start">
+          {/* LEFT — statement */}
+          <div className="col-span-12 md:col-span-5">
+            <p className="text-xs tracking-[0.3em] uppercase text-[#6b6255]">
+              Our Clients
+            </p>
 
-  {/* LEFT — statement */}
-  <div className="col-span-12 md:col-span-5">
-    <p className="text-xs tracking-[0.3em] uppercase text-[#6b6255]">
-      Our Clients
-    </p>
+            <h2 className="mt-4 text-4xl md:text-5xl font-[Playfair_Display] font-medium text-[#2b2b2b] leading-[1.1]">
+              Selected Partnerships
+            </h2>
+          </div>
 
-    <h2 className="mt-4 text-4xl md:text-5xl font-[Playfair_Display] font-medium text-[#2b2b2b] leading-[1.1]">
-      Selected Partnerships
-    </h2>
-  </div>
+          {/* RIGHT — facts */}
+          <div className="col-span-12 md:col-span-7">
+            <div className="mt-8 h-[1px] w-full bg-[#2b2b2b]/10" />
 
-  {/* RIGHT — facts */}
-  <div className="col-span-12 md:col-span-7">
-
-
-    <div className="mt-8 h-[1px] w-full bg-[#2b2b2b]/10" />
-
-    <p className="mt-6 text-sm md:text-base leading-relaxed max-w-xl">
-      We work with a focused group of clients where quality, clarity,
-      and long-term thinking matter more than volume.
-    </p>
-  </div>
-
-</div>
-
+            <p className="mt-6 text-sm md:text-base leading-relaxed max-w-xl">
+              We work with a focused group of clients where quality, clarity,
+              and long-term thinking matter more than volume.
+            </p>
+          </div>
+        </div>
 
         {/* Marquee Wrapper */}
         {/* Marquee Wrapper */}
-<div className="relative overflow-hidden space-y-10">
-  {/* Fade Edges */}
-  <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#fdf8f1] to-transparent z-20" />
-  <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#fdf8f1] to-transparent z-20" />
+        <div className="relative overflow-hidden space-y-10">
+          {/* Fade Edges */}
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#fdf8f1] to-transparent z-20" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#fdf8f1] to-transparent z-20" />
 
-  {/* Row 1 — Left to Right */}
-  <motion.div
-    className="flex gap-8 w-max"
-    animate={{ x: ["0%", "-50%"] }}
-    transition={{
-      repeat: Infinity,
-      duration: 45,
-      ease: "linear",
-    }}
-  >
-    {[...logos, ...logos].map((logo, idx) => (
-      <LogoCard key={`row1-${idx}`} logo={logo} />
-    ))}
-  </motion.div>
+          {/* Row 1 — Left to Right */}
+          <motion.div
+            className="flex gap-8 w-max"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{
+              repeat: Infinity,
+              duration: 45,
+              ease: "linear",
+            }}
+          >
+            {[...logos, ...logos].map((logo, idx) => (
+              <LogoCard key={`row1-${idx}`} logo={logo} />
+            ))}
+          </motion.div>
 
-  {/* Row 2 — Right to Left */}
-  <motion.div
-    className="flex gap-8 w-max"
-    animate={{ x: ["-50%", "0%"] }}
-    transition={{
-      repeat: Infinity,
-      duration: 28,
-      ease: "linear",
-    }}
-  >
-    {[...logos, ...logos].map((logo, idx) => (
-      <LogoCard key={`row2-${idx}`} logo={logo} />
-    ))}
-  </motion.div>
-</div>
-
+          {/* Row 2 — Right to Left */}
+          <motion.div
+            className="flex gap-8 w-max"
+            animate={{ x: ["-50%", "0%"] }}
+            transition={{
+              repeat: Infinity,
+              duration: 28,
+              ease: "linear",
+            }}
+          >
+            {[...logos, ...logos].map((logo, idx) => (
+              <LogoCard key={`row2-${idx}`} logo={logo} />
+            ))}
+          </motion.div>
+        </div>
       </motion.div>
     </section>
   );
