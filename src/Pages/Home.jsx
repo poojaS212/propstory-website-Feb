@@ -32,7 +32,7 @@ import OurBenifits from "@/Components/OurBenifits";
     {/* <BenefitsSection /> */}
   
     <OurBenifits />
-    <OurTeam />
+    {/* <OurTeam /> */}
       {/* <MeetOurTeam /> */}
     <OurClientsvertical />
     {/* <OurClients />

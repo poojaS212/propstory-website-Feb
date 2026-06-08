@@ -1,42 +1,50 @@
 // Footer.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
-
+import { FcGoogle } from "react-icons/fc";
 const offices = [
   {
     city: "Bangalore",
     address:
-      "Hustlehub Tech Park H210, 36/5 Somasundarapalya Main Road,\nHSR Layout, Bengaluru, Karnataka 560102",
-    phone: "+91 22 4080 9000",
+      "Hustlehub Tech Park H210, 36/5 Somasundarapalya Main Road, HSR Layout, Bengaluru, Karnataka 560102",
+    phone: "+91 9167510950",
     color: "bg-pink-500",
   },
   {
-    city: "Delhi NCR",
+    city: "GURGAON",
     address:
-      "DLF Corporate Tower, Golf Course Road,\nGurugram, Haryana 122002",
-    phone: "+91 124 408 9000",
+      "#1242 SEC 10A Urban Estate ,Gurgaon, Haryana, India - 122001",
+    phone: "+91 9167510950",
     color: "bg-yellow-500",
   },
-  {
-    city: "Mumbai",
+   {
+    city: "KARNAL",
     address:
-      "Teloz Spaces Techniplex, SV Road,\nMalad West, Mumbai 400064",
-    phone: "+91 80 4080 9000",
+      "SCO 93, 2nd Floor, Mugal Canal, Karnal (132001)",
+    phone: "+91 9167510950",
     color: "bg-green-600",
   },
-  {
-    city: "Pune",
-    address:
-      "Business Centre, Baner Highway Road,\nPune, Maharashtra 411045",
-    phone: "+91 99 5360 5303",
-    color: "bg-blue-600",
-  },
+  // {
+  //   city: "Mumbai",
+  //   address:
+  //     "Teloz Spaces Techniplex, SV Road,\nMalad West, Mumbai 400064",
+  //   phone: "+91 80 4080 9000",
+  //   color: "bg-green-600",
+  // },
+  // {
+  //   city: "Pune",
+  //   address:
+  //     "Business Centre, Baner Highway Road,\nPune, Maharashtra 411045",
+  //   phone: "+91 99 5360 5303",
+  //   color: "bg-blue-600",
+  // },
 ];
 
 export default function Footer() {
   return (
-    <footer className="relative bg-white text-black overflow-hidden pt-36 pb-16">
+    <footer className="relative bg-white text-black overflow-hidden md:pt-10 pt-22 pb-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         
         {/* BIG HEADING */}
@@ -55,7 +63,7 @@ export default function Footer() {
         </motion.div>
 
         {/* ADDRESSES GRID */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-14 relative z-10 mb-24">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-14 relative z-10 mb-24">
           {offices.map((office, i) => (
             <motion.div
               key={i}
@@ -102,6 +110,7 @@ export default function Footer() {
               className="w-24"
             />
             <div className="h-6 w-[1px] bg-black/20" />
+            <FcGoogle size={22} /> 
             <span className="text-xs uppercase tracking-widest text-neutral-600">
               Google Partner Certified
             </span>
@@ -109,16 +118,20 @@ export default function Footer() {
 
           {/* Site Links */}
           <div className="flex gap-8">
-            {["Privacy Policy", "Terms"].map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="hover:text-black transition relative after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-black after:transition-all hover:after:w-full"
-              >
-                {item}
-              </a>
-            ))}
-          </div>
+  <Link
+    to="/privacy-policy"
+    className="hover:text-black transition"
+  >
+    Privacy Policy
+  </Link>
+
+  <Link
+    to="/terms-conditions"
+    className="hover:text-black transition"
+  >
+    Terms
+  </Link>
+</div>
           {/* Social Icons */}
 <div className="flex gap-4">
   <a href="https://www.facebook.com/PropStoryIndia/" target="_blank" className="w-9 h-9 flex items-center justify-center rounded-full border border-black/20 hover:bg-black hover:text-white transition">

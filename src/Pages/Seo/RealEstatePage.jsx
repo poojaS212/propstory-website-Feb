@@ -1,3 +1,4 @@
+import SeoContactSection from '@/Components/Seo/SeoContatcSection'
 import SeoFAQ from '@/Components/Seo/SeoFAQ'
 import SeoHeroBangalore from '@/Components/Seo/SeoHeroBangalore'
 import SeoHowWeHelp from '@/Components/Seo/SeoHowWeHelp'
@@ -14,6 +15,8 @@ export const RealEstatePage = () => {
      <SeoServices />
      <SeoWhyUs />
      <SeoFAQ />
+    <SeoContactSection />
+
     </>
   )
 }

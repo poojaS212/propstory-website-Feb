@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const logos = [
-  "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w5rmmadani.png",
+  "https://magicpage-dev.propstory.com/ImageUploads/ravi%20temp/1nnx5eapkmpp9yngd.webp",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w68n8BKC-28.png",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w6jgjELDECO-01-01.png",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w6taqEMAAR-01.png",
@@ -10,7 +10,7 @@ const logos = [
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w7rrjKOLTE%20PATIL-01.png",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9w81qeMAHINDRA-01.png",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9x2bqgMETRO%20GROUP-01.png",
-  "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwlieferk8SPAGROUP_11zon.png",
+  "https://magicpage-dev.propstory.com/ImageUploads/ravi%20temp/1nnx5eapkmpp3tctg.webp",
   "https://magicpage-dev.propstory.com/ImageUploads/VBHC%20Landscape/1nnx51q2hm71ht9gt.jpg",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9wb7jeNEW%20PORUR_11zon.png",
   "https://cdn.propstory.com/magicpages/NAME/16iwl4khzwli9wbm1mOZONE_11zon.png",

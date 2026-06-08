@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import PageBanner from "../../Components/PageBanner"; 
+import Breadcrumb from "@/Components/Breadcrumb";
 
 const testimonials = [
   {
@@ -74,14 +75,15 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className=" text-white py-20">
+    <section className=" text-white py-20 px-5">
        <PageBanner
               title="Voices of Our Happy Clients"
               subtitle="Hear directly from the people who’ve experienced seamless and successful property solutions with us."
               bgImage="https://magicpage-dev.propstory.com/ImageUploads/ravi%20temp/1nnx5eapkmnsm3i2s.webp"
             />
-      
+      <Breadcrumb />
        <div className="text-center my-16">
+
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-black">
             Trusted by Homeowners & Investors
           </h1>
@@ -115,7 +117,9 @@ export default function TestimonialsSection() {
         <div className="relative bg-gray-900 rounded-3xl p-10 flex flex-col justify-between">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gray-700"></div>
+            <div className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-semibold uppercase">
+  {t.name.charAt(0)}
+</div>
               <div>
                 <p className="font-semibold">{t.name}</p>
                 <p className="text-gray-400 text-sm">{t.designation}</p>

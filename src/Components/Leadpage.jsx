@@ -1,6 +1,7 @@
 import React from "react";
 import { UserCheck, MapPin, Rocket, Home, TrendingDown } from "lucide-react";
 import PageBanner from "./PageBanner";
+import Breadcrumb from "./Breadcrumb";
 
 
 const services = [
@@ -44,7 +45,7 @@ const Leadpage = () => {
         subtitle="We create targeted lead generation campaigns that attract serious property buyers and investors through structured digital funnels and audience targeting."
         bgImage="https://magicpage-dev.propstory.com/ImageUploads/ravi%20temp/1nnx5eapkmnsm2hlf.webp"
       />
-
+<Breadcrumb />
       {/* Background dots */}
       <div className="absolute inset-0 opacity-[0.15] pointer-events-none">
         <div className="w-full h-full bg-[radial-gradient(#9ca3af_1px,transparent_1px)] [background-size:22px_22px]" />
